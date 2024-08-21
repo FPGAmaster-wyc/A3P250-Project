@@ -1,0 +1,33 @@
+@N|Running in 64-bit mode
+@N|Running in 64-bit mode
+@N: CG364 :"C:\Microsemi\Libero_SoC_v11.8\SynplifyPro\lib\proasic\proasic3.v":2447:7:2447:9|Synthesizing module PLL in library work.
+@N: CG364 :"C:\Microsemi\Libero_SoC_v11.8\SynplifyPro\lib\proasic\proasic3.v":1163:7:1163:9|Synthesizing module GND in library work.
+@N: CG364 :"C:\Microsemi\Libero_SoC_v11.8\SynplifyPro\lib\proasic\proasic3.v":1864:7:1864:9|Synthesizing module VCC in library work.
+@N: CG364 :"E:\my_work\A3P250\project\RD_FLASH1\smartgen\get_clk\get_clk.v":5:7:5:13|Synthesizing module get_clk in library work.
+@N: CG364 :"E:\my_work\A3P250\project\RD_FLASH1\hdl\key_filter.v":3:8:3:17|Synthesizing module key_filter in library work.
+@N: CG179 :"E:\my_work\A3P250\project\RD_FLASH1\hdl\key_filter.v":33:20:33:27|Removing redundant assignment.
+@N: CG364 :"C:\Microsemi\Libero_SoC_v11.8\SynplifyPro\lib\proasic\proasic3.v":1283:7:1283:9|Synthesizing module INV in library work.
+@N: CG364 :"C:\Microsemi\Libero_SoC_v11.8\SynplifyPro\lib\proasic\proasic3.v":2:7:2:10|Synthesizing module AND2 in library work.
+@N: CG364 :"C:\Microsemi\Libero_SoC_v11.8\SynplifyPro\lib\proasic\proasic3.v":20:7:20:10|Synthesizing module AND3 in library work.
+@N: CG364 :"C:\Microsemi\Libero_SoC_v11.8\SynplifyPro\lib\proasic\proasic3.v":1905:7:1905:11|Synthesizing module XNOR2 in library work.
+@N: CG364 :"C:\Microsemi\Libero_SoC_v11.8\SynplifyPro\lib\proasic\proasic3.v":86:7:86:9|Synthesizing module AO1 in library work.
+@N: CG364 :"C:\Microsemi\Libero_SoC_v11.8\SynplifyPro\lib\proasic\proasic3.v":1929:7:1929:10|Synthesizing module XOR2 in library work.
+@N: CG364 :"C:\Microsemi\Libero_SoC_v11.8\SynplifyPro\lib\proasic\proasic3.v":929:7:929:12|Synthesizing module DFN1C0 in library work.
+@N: CG364 :"C:\Microsemi\Libero_SoC_v11.8\SynplifyPro\lib\proasic\proasic3.v":1325:7:1325:9|Synthesizing module MX2 in library work.
+@N: CG364 :"C:\Microsemi\Libero_SoC_v11.8\SynplifyPro\lib\proasic\proasic3.v":977:7:977:14|Synthesizing module DFN1E1C0 in library work.
+@N: CG364 :"C:\Microsemi\Libero_SoC_v11.8\SynplifyPro\lib\proasic\proasic3.v":1349:7:1349:11|Synthesizing module NAND2 in library work.
+@N: CG364 :"C:\Microsemi\Libero_SoC_v11.8\SynplifyPro\lib\proasic\proasic3.v":1464:7:1464:9|Synthesizing module OR2 in library work.
+@N: CG364 :"C:\Microsemi\Libero_SoC_v11.8\SynplifyPro\lib\proasic\proasic3.v":1996:7:1996:12|Synthesizing module RAM4K9 in library work.
+@N: CG364 :"C:\Microsemi\Libero_SoC_v11.8\SynplifyPro\lib\proasic\proasic3.v":1953:7:1953:10|Synthesizing module BUFF in library work.
+@N: CG364 :"C:\Microsemi\Libero_SoC_v11.8\SynplifyPro\lib\proasic\proasic3.v":1470:7:1470:10|Synthesizing module OR2A in library work.
+@N: CG364 :"C:\Microsemi\Libero_SoC_v11.8\SynplifyPro\lib\proasic\proasic3.v":8:7:8:11|Synthesizing module AND2A in library work.
+@N: CG364 :"C:\Microsemi\Libero_SoC_v11.8\SynplifyPro\lib\proasic\proasic3.v":1001:7:1001:12|Synthesizing module DFN1P0 in library work.
+@N: CG364 :"E:\my_work\A3P250\project\RD_FLASH1\smartgen\fifo8b2048\fifo8b2048.v":5:7:5:16|Synthesizing module fifo8b2048 in library work.
+@N: CG364 :"E:\my_work\A3P250\project\RD_FLASH1\hdl\flash_read_ctrl.v":4:8:4:22|Synthesizing module flash_read_ctrl in library work.
+@N: CG179 :"E:\my_work\A3P250\project\RD_FLASH1\hdl\flash_read_ctrl.v":176:20:176:26|Removing redundant assignment.
+@N: CG364 :"E:\my_work\A3P250\project\RD_FLASH1\hdl\uart_tx.v":3:8:3:14|Synthesizing module uart_tx in library work.
+@N: CG364 :"E:\my_work\A3P250\project\RD_FLASH1\hdl\spi_flash_read.v":5:8:5:21|Synthesizing module spi_flash_read in library work.
+@N: CL201 :"E:\my_work\A3P250\project\RD_FLASH1\hdl\flash_read_ctrl.v":107:0:107:5|Trying to extract state machine for register state.
+@N: CL159 :"E:\my_work\A3P250\project\RD_FLASH1\hdl\flash_read_ctrl.v":7:28:7:34|Input ila_clk is unused.
+@N|Running in 64-bit mode
+

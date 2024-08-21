@@ -1,0 +1,14 @@
+@P:  Worst Slack : -4.477
+@P:  get_clk|GLA_inferred_clock - Estimated Frequency : 69.1 MHz
+@P:  get_clk|GLA_inferred_clock - Requested Frequency : 100.0 MHz
+@P:  get_clk|GLA_inferred_clock - Estimated Period : 14.477
+@P:  get_clk|GLA_inferred_clock - Requested Period : 10.000
+@P:  get_clk|GLA_inferred_clock - Slack : -4.477
+@P:  Total Area : 708.0
+@P:  Total Area : 85.0
+@P:  Total Area : 536.0
+@P:  Total Area : 252.0
+@P:  Total Area : 87.0
+@P:  Total Area : 0.0
+@P:  Total Area : 708.0
+@P:  CPU Time : 0h:00m:01s

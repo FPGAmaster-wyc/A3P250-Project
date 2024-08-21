@@ -1,0 +1,14 @@
+C:\Microsemi\Libero_SoC_v11.8\SynplifyPro\bin64\m_proasic.exe  -mp  4  -prjfile  E:\my_work\A3P250\project\RD_FLASH1\synthesis\scratchproject.prs  -implementation  synthesis  -prodtype  synplify_pro   -encrypt  -pro  -rundir  E:\my_work\A3P250\project\RD_FLASH1\synthesis   -part A3P250  -package VQFP100  -grade -1    -maxfan 24 -globalthreshold 50 -opcond COMWC -report_path 4000 -RWCheckOnRam 0 -summaryfile E:\my_work\A3P250\project\RD_FLASH1\synthesis\synlog\report\spi_flash_read_premap.xml  -top_level_module  spi_flash_read  -oedif  E:\my_work\A3P250\project\RD_FLASH1\synthesis\spi_flash_read.edn  -conchk_prepass  E:\my_work\A3P250\project\RD_FLASH1\synthesis\spi_flash_read_cck.rpt   -freq 100.000   E:\my_work\A3P250\project\RD_FLASH1\synthesis\synwork\spi_flash_read_mult.srs  -flow prepass  -gcc_prepass  -osrd  E:\my_work\A3P250\project\RD_FLASH1\synthesis\synwork\spi_flash_read_prem.srd  -qsap  E:\my_work\A3P250\project\RD_FLASH1\synthesis\spi_flash_read.sap  -devicelib  C:\Microsemi\Libero_SoC_v11.8\SynplifyPro\lib\proasic\proasic3.v  -ologparam  E:\my_work\A3P250\project\RD_FLASH1\synthesis\syntmp\spi_flash_read.plg  -osyn  E:\my_work\A3P250\project\RD_FLASH1\synthesis\synwork\spi_flash_read_prem.srd  -prjdir  E:\my_work\A3P250\project\RD_FLASH1\synthesis\  -prjname  spi_flash_read_syn  -log  E:\my_work\A3P250\project\RD_FLASH1\synthesis\synlog\spi_flash_read_premap.srr 
+rc:1 success:1 runtime:1
+file:E:\my_work\A3P250\project\RD_FLASH1\synthesis\scratchproject.prs|io:o|time:1724230540|size:2154|exec:0
+file:E:\my_work\A3P250\project\RD_FLASH1\synthesis\spi_flash_read.edn|io:o|time:1724230108|size:346267|exec:0
+file:E:\my_work\A3P250\project\RD_FLASH1\synthesis\spi_flash_read_cck.rpt|io:o|time:1724230542|size:20274|exec:0
+file:E:\my_work\A3P250\project\RD_FLASH1\synthesis\synwork\spi_flash_read_mult.srs|io:i|time:1724230541|size:4183|exec:0
+file:E:\my_work\A3P250\project\RD_FLASH1\synthesis\synwork\spi_flash_read_prem.srd|io:o|time:1724230542|size:34378|exec:0
+file:E:\my_work\A3P250\project\RD_FLASH1\synthesis\spi_flash_read.sap|io:o|time:1724230542|size:2063|exec:0
+file:C:\Microsemi\Libero_SoC_v11.8\SynplifyPro\lib\proasic\proasic3.v|io:i|time:1487916450|size:49355|exec:0
+file:E:\my_work\A3P250\project\RD_FLASH1\synthesis\syntmp\spi_flash_read.plg|io:o|time:1724230542|size:0|exec:0
+file:E:\my_work\A3P250\project\RD_FLASH1\synthesis\synwork\spi_flash_read_prem.srd|io:o|time:1724230542|size:34378|exec:0
+file:E:\my_work\A3P250\project\RD_FLASH1\synthesis\synlog\spi_flash_read_premap.srr|io:o|time:1724230542|size:3662|exec:0
+file:C:\Microsemi\Libero_SoC_v11.8\SynplifyPro\bin\m_proasic.exe|io:i|time:1479349034|size:10978304|exec:1
+file:C:\Microsemi\Libero_SoC_v11.8\SynplifyPro\bin64\m_proasic.exe|io:i|time:1479350440|size:14125056|exec:1

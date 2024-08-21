@@ -1,0 +1,1 @@
+@W: MT530 :"e:\my_work\a3p250\project\rd_flash1\hdl\key_filter.v":27:0:27:5|Found inferred clock get_clk|GLA_inferred_clock which controls 171 sequential elements including key_filter_inst.cnt_20ms[19:0]. This clock has no specified timing constraint which may adversely impact design performance. 

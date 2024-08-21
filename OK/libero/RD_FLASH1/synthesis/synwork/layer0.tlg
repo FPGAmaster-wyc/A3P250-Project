@@ -1,0 +1,207 @@
+Selecting top level module spi_flash_read
+@N: CG364 :"C:\Microsemi\Libero_SoC_v11.8\SynplifyPro\lib\proasic\proasic3.v":2447:7:2447:9|Synthesizing module PLL in library work.
+
+@N: CG364 :"C:\Microsemi\Libero_SoC_v11.8\SynplifyPro\lib\proasic\proasic3.v":1163:7:1163:9|Synthesizing module GND in library work.
+
+@N: CG364 :"C:\Microsemi\Libero_SoC_v11.8\SynplifyPro\lib\proasic\proasic3.v":1864:7:1864:9|Synthesizing module VCC in library work.
+
+@N: CG364 :"E:\my_work\A3P250\project\RD_FLASH1\smartgen\get_clk\get_clk.v":5:7:5:13|Synthesizing module get_clk in library work.
+
+@N: CG364 :"E:\my_work\A3P250\project\RD_FLASH1\hdl\key_filter.v":3:8:3:17|Synthesizing module key_filter in library work.
+
+	CNT_MAX=20'b11110100001000111111
+   Generated name = key_filter_999999
+
+@N: CG179 :"E:\my_work\A3P250\project\RD_FLASH1\hdl\key_filter.v":33:20:33:27|Removing redundant assignment.
+@N: CG364 :"C:\Microsemi\Libero_SoC_v11.8\SynplifyPro\lib\proasic\proasic3.v":1283:7:1283:9|Synthesizing module INV in library work.
+
+@N: CG364 :"C:\Microsemi\Libero_SoC_v11.8\SynplifyPro\lib\proasic\proasic3.v":2:7:2:10|Synthesizing module AND2 in library work.
+
+@N: CG364 :"C:\Microsemi\Libero_SoC_v11.8\SynplifyPro\lib\proasic\proasic3.v":20:7:20:10|Synthesizing module AND3 in library work.
+
+@N: CG364 :"C:\Microsemi\Libero_SoC_v11.8\SynplifyPro\lib\proasic\proasic3.v":1905:7:1905:11|Synthesizing module XNOR2 in library work.
+
+@N: CG364 :"C:\Microsemi\Libero_SoC_v11.8\SynplifyPro\lib\proasic\proasic3.v":86:7:86:9|Synthesizing module AO1 in library work.
+
+@N: CG364 :"C:\Microsemi\Libero_SoC_v11.8\SynplifyPro\lib\proasic\proasic3.v":1929:7:1929:10|Synthesizing module XOR2 in library work.
+
+@N: CG364 :"C:\Microsemi\Libero_SoC_v11.8\SynplifyPro\lib\proasic\proasic3.v":929:7:929:12|Synthesizing module DFN1C0 in library work.
+
+@N: CG364 :"C:\Microsemi\Libero_SoC_v11.8\SynplifyPro\lib\proasic\proasic3.v":1325:7:1325:9|Synthesizing module MX2 in library work.
+
+@N: CG364 :"C:\Microsemi\Libero_SoC_v11.8\SynplifyPro\lib\proasic\proasic3.v":977:7:977:14|Synthesizing module DFN1E1C0 in library work.
+
+@N: CG364 :"C:\Microsemi\Libero_SoC_v11.8\SynplifyPro\lib\proasic\proasic3.v":1349:7:1349:11|Synthesizing module NAND2 in library work.
+
+@N: CG364 :"C:\Microsemi\Libero_SoC_v11.8\SynplifyPro\lib\proasic\proasic3.v":1464:7:1464:9|Synthesizing module OR2 in library work.
+
+@N: CG364 :"C:\Microsemi\Libero_SoC_v11.8\SynplifyPro\lib\proasic\proasic3.v":1996:7:1996:12|Synthesizing module RAM4K9 in library work.
+
+@N: CG364 :"C:\Microsemi\Libero_SoC_v11.8\SynplifyPro\lib\proasic\proasic3.v":1953:7:1953:10|Synthesizing module BUFF in library work.
+
+@N: CG364 :"C:\Microsemi\Libero_SoC_v11.8\SynplifyPro\lib\proasic\proasic3.v":1470:7:1470:10|Synthesizing module OR2A in library work.
+
+@N: CG364 :"C:\Microsemi\Libero_SoC_v11.8\SynplifyPro\lib\proasic\proasic3.v":8:7:8:11|Synthesizing module AND2A in library work.
+
+@N: CG364 :"C:\Microsemi\Libero_SoC_v11.8\SynplifyPro\lib\proasic\proasic3.v":1001:7:1001:12|Synthesizing module DFN1P0 in library work.
+
+@N: CG364 :"E:\my_work\A3P250\project\RD_FLASH1\smartgen\fifo8b2048\fifo8b2048.v":5:7:5:16|Synthesizing module fifo8b2048 in library work.
+
+@W: CL168 :"E:\my_work\A3P250\project\RD_FLASH1\smartgen\fifo8b2048\fifo8b2048.v":808:8:808:12|Removing instance MX2_1 because it does not drive other instances. To preserve this instance, use the syn_noprune synthesis directive.
+@W: CL168 :"E:\my_work\A3P250\project\RD_FLASH1\smartgen\fifo8b2048\fifo8b2048.v":803:9:803:15|Removing instance XOR2_36 because it does not drive other instances. To preserve this instance, use the syn_noprune synthesis directive.
+@W: CL168 :"E:\my_work\A3P250\project\RD_FLASH1\smartgen\fifo8b2048\fifo8b2048.v":796:9:796:15|Removing instance XOR2_42 because it does not drive other instances. To preserve this instance, use the syn_noprune synthesis directive.
+@W: CL168 :"E:\my_work\A3P250\project\RD_FLASH1\smartgen\fifo8b2048\fifo8b2048.v":793:9:793:15|Removing instance AND2_37 because it does not drive other instances. To preserve this instance, use the syn_noprune synthesis directive.
+@W: CL168 :"E:\my_work\A3P250\project\RD_FLASH1\smartgen\fifo8b2048\fifo8b2048.v":791:9:791:15|Removing instance XOR2_68 because it does not drive other instances. To preserve this instance, use the syn_noprune synthesis directive.
+@W: CL168 :"E:\my_work\A3P250\project\RD_FLASH1\smartgen\fifo8b2048\fifo8b2048.v":782:11:782:25|Removing instance DFN1C0_WGRY[4] because it does not drive other instances. To preserve this instance, use the syn_noprune synthesis directive.
+@W: CL168 :"E:\my_work\A3P250\project\RD_FLASH1\smartgen\fifo8b2048\fifo8b2048.v":781:9:781:15|Removing instance AND2_21 because it does not drive other instances. To preserve this instance, use the syn_noprune synthesis directive.
+@W: CL168 :"E:\my_work\A3P250\project\RD_FLASH1\smartgen\fifo8b2048\fifo8b2048.v":777:11:777:25|Removing instance DFN1C0_RGRY[0] because it does not drive other instances. To preserve this instance, use the syn_noprune synthesis directive.
+@W: CL168 :"E:\my_work\A3P250\project\RD_FLASH1\smartgen\fifo8b2048\fifo8b2048.v":761:8:761:13|Removing instance MX2_34 because it does not drive other instances. To preserve this instance, use the syn_noprune synthesis directive.
+@W: CL168 :"E:\my_work\A3P250\project\RD_FLASH1\smartgen\fifo8b2048\fifo8b2048.v":758:13:758:22|Removing instance DFN1E1C0_3 because it does not drive other instances. To preserve this instance, use the syn_noprune synthesis directive.
+@W: CL168 :"E:\my_work\A3P250\project\RD_FLASH1\smartgen\fifo8b2048\fifo8b2048.v":752:9:752:15|Removing instance AND2_53 because it does not drive other instances. To preserve this instance, use the syn_noprune synthesis directive.
+@W: CL168 :"E:\my_work\A3P250\project\RD_FLASH1\smartgen\fifo8b2048\fifo8b2048.v":750:9:750:15|Removing instance XOR2_17 because it does not drive other instances. To preserve this instance, use the syn_noprune synthesis directive.
+@W: CL168 :"E:\my_work\A3P250\project\RD_FLASH1\smartgen\fifo8b2048\fifo8b2048.v":743:8:743:13|Removing instance MX2_39 because it does not drive other instances. To preserve this instance, use the syn_noprune synthesis directive.
+@W: CL168 :"E:\my_work\A3P250\project\RD_FLASH1\smartgen\fifo8b2048\fifo8b2048.v":713:9:713:15|Removing instance XOR2_51 because it does not drive other instances. To preserve this instance, use the syn_noprune synthesis directive.
+@W: CL168 :"E:\my_work\A3P250\project\RD_FLASH1\smartgen\fifo8b2048\fifo8b2048.v":712:8:712:13|Removing instance AO1_27 because it does not drive other instances. To preserve this instance, use the syn_noprune synthesis directive.
+@W: CL168 :"E:\my_work\A3P250\project\RD_FLASH1\smartgen\fifo8b2048\fifo8b2048.v":706:8:706:13|Removing instance MX2_12 because it does not drive other instances. To preserve this instance, use the syn_noprune synthesis directive.
+@W: CL168 :"E:\my_work\A3P250\project\RD_FLASH1\smartgen\fifo8b2048\fifo8b2048.v":705:9:705:15|Removing instance XOR2_54 because it does not drive other instances. To preserve this instance, use the syn_noprune synthesis directive.
+@W: CL168 :"E:\my_work\A3P250\project\RD_FLASH1\smartgen\fifo8b2048\fifo8b2048.v":703:9:703:14|Removing instance AND2_8 because it does not drive other instances. To preserve this instance, use the syn_noprune synthesis directive.
+@W: CL168 :"E:\my_work\A3P250\project\RD_FLASH1\smartgen\fifo8b2048\fifo8b2048.v":700:11:700:25|Removing instance DFN1C0_RGRY[3] because it does not drive other instances. To preserve this instance, use the syn_noprune synthesis directive.
+@W: CL168 :"E:\my_work\A3P250\project\RD_FLASH1\smartgen\fifo8b2048\fifo8b2048.v":695:8:695:12|Removing instance MX2_4 because it does not drive other instances. To preserve this instance, use the syn_noprune synthesis directive.
+@W: CL168 :"E:\my_work\A3P250\project\RD_FLASH1\smartgen\fifo8b2048\fifo8b2048.v":691:11:691:25|Removing instance DFN1C0_WGRY[8] because it does not drive other instances. To preserve this instance, use the syn_noprune synthesis directive.
+@W: CL168 :"E:\my_work\A3P250\project\RD_FLASH1\smartgen\fifo8b2048\fifo8b2048.v":686:9:686:15|Removing instance XOR2_50 because it does not drive other instances. To preserve this instance, use the syn_noprune synthesis directive.
+@W: CL168 :"E:\my_work\A3P250\project\RD_FLASH1\smartgen\fifo8b2048\fifo8b2048.v":685:9:685:15|Removing instance AND2_40 because it does not drive other instances. To preserve this instance, use the syn_noprune synthesis directive.
+@W: CL168 :"E:\my_work\A3P250\project\RD_FLASH1\smartgen\fifo8b2048\fifo8b2048.v":681:11:681:26|Removing instance DFN1C0_RGRY[10] because it does not drive other instances. To preserve this instance, use the syn_noprune synthesis directive.
+@W: CL168 :"E:\my_work\A3P250\project\RD_FLASH1\smartgen\fifo8b2048\fifo8b2048.v":680:9:680:15|Removing instance AND2_59 because it does not drive other instances. To preserve this instance, use the syn_noprune synthesis directive.
+@W: CL168 :"E:\my_work\A3P250\project\RD_FLASH1\smartgen\fifo8b2048\fifo8b2048.v":674:9:674:15|Removing instance AND2_45 because it does not drive other instances. To preserve this instance, use the syn_noprune synthesis directive.
+@W: CL168 :"E:\my_work\A3P250\project\RD_FLASH1\smartgen\fifo8b2048\fifo8b2048.v":673:9:673:15|Removing instance AND2_48 because it does not drive other instances. To preserve this instance, use the syn_noprune synthesis directive.
+@W: CL168 :"E:\my_work\A3P250\project\RD_FLASH1\smartgen\fifo8b2048\fifo8b2048.v":671:9:671:15|Removing instance XOR2_12 because it does not drive other instances. To preserve this instance, use the syn_noprune synthesis directive.
+@W: CL168 :"E:\my_work\A3P250\project\RD_FLASH1\smartgen\fifo8b2048\fifo8b2048.v":662:8:662:13|Removing instance AO1_33 because it does not drive other instances. To preserve this instance, use the syn_noprune synthesis directive.
+@W: CL168 :"E:\my_work\A3P250\project\RD_FLASH1\smartgen\fifo8b2048\fifo8b2048.v":656:8:656:13|Removing instance AO1_13 because it does not drive other instances. To preserve this instance, use the syn_noprune synthesis directive.
+@W: CL168 :"E:\my_work\A3P250\project\RD_FLASH1\smartgen\fifo8b2048\fifo8b2048.v":652:9:652:14|Removing instance XOR2_6 because it does not drive other instances. To preserve this instance, use the syn_noprune synthesis directive.
+@W: CL168 :"E:\my_work\A3P250\project\RD_FLASH1\smartgen\fifo8b2048\fifo8b2048.v":649:9:649:14|Removing instance BUFF_3 because it does not drive other instances. To preserve this instance, use the syn_noprune synthesis directive.
+@W: CL168 :"E:\my_work\A3P250\project\RD_FLASH1\smartgen\fifo8b2048\fifo8b2048.v":644:9:644:14|Removing instance AND2_0 because it does not drive other instances. To preserve this instance, use the syn_noprune synthesis directive.
+@W: CL168 :"E:\my_work\A3P250\project\RD_FLASH1\smartgen\fifo8b2048\fifo8b2048.v":643:9:643:15|Removing instance AND2_41 because it does not drive other instances. To preserve this instance, use the syn_noprune synthesis directive.
+@W: CL168 :"E:\my_work\A3P250\project\RD_FLASH1\smartgen\fifo8b2048\fifo8b2048.v":633:11:633:25|Removing instance DFN1C0_WGRY[1] because it does not drive other instances. To preserve this instance, use the syn_noprune synthesis directive.
+@W: CL168 :"E:\my_work\A3P250\project\RD_FLASH1\smartgen\fifo8b2048\fifo8b2048.v":629:8:629:13|Removing instance MX2_37 because it does not drive other instances. To preserve this instance, use the syn_noprune synthesis directive.
+@W: CL168 :"E:\my_work\A3P250\project\RD_FLASH1\smartgen\fifo8b2048\fifo8b2048.v":625:8:625:13|Removing instance MX2_29 because it does not drive other instances. To preserve this instance, use the syn_noprune synthesis directive.
+@W: CL168 :"E:\my_work\A3P250\project\RD_FLASH1\smartgen\fifo8b2048\fifo8b2048.v":622:9:622:15|Removing instance XOR2_41 because it does not drive other instances. To preserve this instance, use the syn_noprune synthesis directive.
+@W: CL168 :"E:\my_work\A3P250\project\RD_FLASH1\smartgen\fifo8b2048\fifo8b2048.v":619:9:619:15|Removing instance XOR2_44 because it does not drive other instances. To preserve this instance, use the syn_noprune synthesis directive.
+@W: CL168 :"E:\my_work\A3P250\project\RD_FLASH1\smartgen\fifo8b2048\fifo8b2048.v":618:9:618:15|Removing instance AND2_33 because it does not drive other instances. To preserve this instance, use the syn_noprune synthesis directive.
+@W: CL168 :"E:\my_work\A3P250\project\RD_FLASH1\smartgen\fifo8b2048\fifo8b2048.v":607:11:607:25|Removing instance DFN1C0_RGRY[7] because it does not drive other instances. To preserve this instance, use the syn_noprune synthesis directive.
+@W: CL168 :"E:\my_work\A3P250\project\RD_FLASH1\smartgen\fifo8b2048\fifo8b2048.v":605:11:605:26|Removing instance DFN1C0_WGRY[10] because it does not drive other instances. To preserve this instance, use the syn_noprune synthesis directive.
+@W: CL168 :"E:\my_work\A3P250\project\RD_FLASH1\smartgen\fifo8b2048\fifo8b2048.v":600:9:600:15|Removing instance AND2_36 because it does not drive other instances. To preserve this instance, use the syn_noprune synthesis directive.
+@W: CL168 :"E:\my_work\A3P250\project\RD_FLASH1\smartgen\fifo8b2048\fifo8b2048.v":596:11:596:25|Removing instance DFN1C0_RGRY[5] because it does not drive other instances. To preserve this instance, use the syn_noprune synthesis directive.
+@W: CL168 :"E:\my_work\A3P250\project\RD_FLASH1\smartgen\fifo8b2048\fifo8b2048.v":591:9:591:15|Removing instance XOR2_40 because it does not drive other instances. To preserve this instance, use the syn_noprune synthesis directive.
+@W: CL168 :"E:\my_work\A3P250\project\RD_FLASH1\smartgen\fifo8b2048\fifo8b2048.v":589:9:589:15|Removing instance XOR2_29 because it does not drive other instances. To preserve this instance, use the syn_noprune synthesis directive.
+@W: CL168 :"E:\my_work\A3P250\project\RD_FLASH1\smartgen\fifo8b2048\fifo8b2048.v":588:8:588:12|Removing instance AO1_0 because it does not drive other instances. To preserve this instance, use the syn_noprune synthesis directive.
+@W: CL168 :"E:\my_work\A3P250\project\RD_FLASH1\smartgen\fifo8b2048\fifo8b2048.v":586:11:586:25|Removing instance DFN1C0_WGRY[2] because it does not drive other instances. To preserve this instance, use the syn_noprune synthesis directive.
+@W: CL168 :"E:\my_work\A3P250\project\RD_FLASH1\smartgen\fifo8b2048\fifo8b2048.v":581:8:581:13|Removing instance MX2_33 because it does not drive other instances. To preserve this instance, use the syn_noprune synthesis directive.
+@W: CL168 :"E:\my_work\A3P250\project\RD_FLASH1\smartgen\fifo8b2048\fifo8b2048.v":579:8:579:12|Removing instance MX2_3 because it does not drive other instances. To preserve this instance, use the syn_noprune synthesis directive.
+@W: CL168 :"E:\my_work\A3P250\project\RD_FLASH1\smartgen\fifo8b2048\fifo8b2048.v":573:9:573:15|Removing instance AND2_27 because it does not drive other instances. To preserve this instance, use the syn_noprune synthesis directive.
+@W: CL168 :"E:\my_work\A3P250\project\RD_FLASH1\smartgen\fifo8b2048\fifo8b2048.v":571:11:571:25|Removing instance DFN1C0_RGRY[6] because it does not drive other instances. To preserve this instance, use the syn_noprune synthesis directive.
+@W: CL168 :"E:\my_work\A3P250\project\RD_FLASH1\smartgen\fifo8b2048\fifo8b2048.v":569:8:569:13|Removing instance MX2_15 because it does not drive other instances. To preserve this instance, use the syn_noprune synthesis directive.
+@W: CL168 :"E:\my_work\A3P250\project\RD_FLASH1\smartgen\fifo8b2048\fifo8b2048.v":566:9:566:15|Removing instance AND2_39 because it does not drive other instances. To preserve this instance, use the syn_noprune synthesis directive.
+@W: CL168 :"E:\my_work\A3P250\project\RD_FLASH1\smartgen\fifo8b2048\fifo8b2048.v":564:11:564:22|Removing instance DFN1C0_DVLDX because it does not drive other instances. To preserve this instance, use the syn_noprune synthesis directive.
+@W: CL168 :"E:\my_work\A3P250\project\RD_FLASH1\smartgen\fifo8b2048\fifo8b2048.v":561:8:561:12|Removing instance MX2_7 because it does not drive other instances. To preserve this instance, use the syn_noprune synthesis directive.
+@W: CL168 :"E:\my_work\A3P250\project\RD_FLASH1\smartgen\fifo8b2048\fifo8b2048.v":558:8:558:12|Removing instance INV_2 because it does not drive other instances. To preserve this instance, use the syn_noprune synthesis directive.
+@W: CL168 :"E:\my_work\A3P250\project\RD_FLASH1\smartgen\fifo8b2048\fifo8b2048.v":556:8:556:13|Removing instance AO1_32 because it does not drive other instances. To preserve this instance, use the syn_noprune synthesis directive.
+@W: CL168 :"E:\my_work\A3P250\project\RD_FLASH1\smartgen\fifo8b2048\fifo8b2048.v":542:8:542:13|Removing instance MX2_38 because it does not drive other instances. To preserve this instance, use the syn_noprune synthesis directive.
+@W: CL168 :"E:\my_work\A3P250\project\RD_FLASH1\smartgen\fifo8b2048\fifo8b2048.v":537:8:537:13|Removing instance MX2_11 because it does not drive other instances. To preserve this instance, use the syn_noprune synthesis directive.
+@W: CL168 :"E:\my_work\A3P250\project\RD_FLASH1\smartgen\fifo8b2048\fifo8b2048.v":530:9:530:14|Removing instance BUFF_0 because it does not drive other instances. To preserve this instance, use the syn_noprune synthesis directive.
+@W: CL168 :"E:\my_work\A3P250\project\RD_FLASH1\smartgen\fifo8b2048\fifo8b2048.v":525:9:525:15|Removing instance XOR2_25 because it does not drive other instances. To preserve this instance, use the syn_noprune synthesis directive.
+@W: CL168 :"E:\my_work\A3P250\project\RD_FLASH1\smartgen\fifo8b2048\fifo8b2048.v":520:8:520:13|Removing instance MX2_32 because it does not drive other instances. To preserve this instance, use the syn_noprune synthesis directive.
+@W: CL168 :"E:\my_work\A3P250\project\RD_FLASH1\smartgen\fifo8b2048\fifo8b2048.v":514:9:514:15|Removing instance XOR2_14 because it does not drive other instances. To preserve this instance, use the syn_noprune synthesis directive.
+@W: CL168 :"E:\my_work\A3P250\project\RD_FLASH1\smartgen\fifo8b2048\fifo8b2048.v":512:9:512:14|Removing instance AND2_5 because it does not drive other instances. To preserve this instance, use the syn_noprune synthesis directive.
+@W: CL168 :"E:\my_work\A3P250\project\RD_FLASH1\smartgen\fifo8b2048\fifo8b2048.v":503:11:503:25|Removing instance DFN1C0_RGRY[4] because it does not drive other instances. To preserve this instance, use the syn_noprune synthesis directive.
+@W: CL168 :"E:\my_work\A3P250\project\RD_FLASH1\smartgen\fifo8b2048\fifo8b2048.v":497:9:497:15|Removing instance AND2_58 because it does not drive other instances. To preserve this instance, use the syn_noprune synthesis directive.
+@W: CL168 :"E:\my_work\A3P250\project\RD_FLASH1\smartgen\fifo8b2048\fifo8b2048.v":492:13:492:22|Removing instance DFN1E1C0_2 because it does not drive other instances. To preserve this instance, use the syn_noprune synthesis directive.
+@W: CL168 :"E:\my_work\A3P250\project\RD_FLASH1\smartgen\fifo8b2048\fifo8b2048.v":491:9:491:15|Removing instance AND2_13 because it does not drive other instances. To preserve this instance, use the syn_noprune synthesis directive.
+@W: CL168 :"E:\my_work\A3P250\project\RD_FLASH1\smartgen\fifo8b2048\fifo8b2048.v":488:11:488:25|Removing instance DFN1C0_WGRY[9] because it does not drive other instances. To preserve this instance, use the syn_noprune synthesis directive.
+@W: CL168 :"E:\my_work\A3P250\project\RD_FLASH1\smartgen\fifo8b2048\fifo8b2048.v":481:8:481:13|Removing instance MX2_26 because it does not drive other instances. To preserve this instance, use the syn_noprune synthesis directive.
+@W: CL168 :"E:\my_work\A3P250\project\RD_FLASH1\smartgen\fifo8b2048\fifo8b2048.v":469:8:469:13|Removing instance MX2_28 because it does not drive other instances. To preserve this instance, use the syn_noprune synthesis directive.
+@W: CL168 :"E:\my_work\A3P250\project\RD_FLASH1\smartgen\fifo8b2048\fifo8b2048.v":457:9:457:15|Removing instance AND2_19 because it does not drive other instances. To preserve this instance, use the syn_noprune synthesis directive.
+@W: CL168 :"E:\my_work\A3P250\project\RD_FLASH1\smartgen\fifo8b2048\fifo8b2048.v":453:8:453:12|Removing instance MX2_0 because it does not drive other instances. To preserve this instance, use the syn_noprune synthesis directive.
+@W: CL168 :"E:\my_work\A3P250\project\RD_FLASH1\smartgen\fifo8b2048\fifo8b2048.v":448:11:448:25|Removing instance DFN1C0_RGRY[8] because it does not drive other instances. To preserve this instance, use the syn_noprune synthesis directive.
+@W: CL168 :"E:\my_work\A3P250\project\RD_FLASH1\smartgen\fifo8b2048\fifo8b2048.v":436:11:436:25|Removing instance DFN1C0_WGRY[0] because it does not drive other instances. To preserve this instance, use the syn_noprune synthesis directive.
+@W: CL168 :"E:\my_work\A3P250\project\RD_FLASH1\smartgen\fifo8b2048\fifo8b2048.v":431:8:431:13|Removing instance MX2_22 because it does not drive other instances. To preserve this instance, use the syn_noprune synthesis directive.
+@W: CL168 :"E:\my_work\A3P250\project\RD_FLASH1\smartgen\fifo8b2048\fifo8b2048.v":414:8:414:12|Removing instance INV_4 because it does not drive other instances. To preserve this instance, use the syn_noprune synthesis directive.
+@W: CL168 :"E:\my_work\A3P250\project\RD_FLASH1\smartgen\fifo8b2048\fifo8b2048.v":404:9:404:14|Removing instance AND2_3 because it does not drive other instances. To preserve this instance, use the syn_noprune synthesis directive.
+@W: CL168 :"E:\my_work\A3P250\project\RD_FLASH1\smartgen\fifo8b2048\fifo8b2048.v":401:9:401:15|Removing instance XOR2_34 because it does not drive other instances. To preserve this instance, use the syn_noprune synthesis directive.
+@W: CL168 :"E:\my_work\A3P250\project\RD_FLASH1\smartgen\fifo8b2048\fifo8b2048.v":392:11:392:26|Removing instance DFN1C0_WGRY[11] because it does not drive other instances. To preserve this instance, use the syn_noprune synthesis directive.
+@W: CL168 :"E:\my_work\A3P250\project\RD_FLASH1\smartgen\fifo8b2048\fifo8b2048.v":390:9:390:15|Removing instance AND2_35 because it does not drive other instances. To preserve this instance, use the syn_noprune synthesis directive.
+@W: CL168 :"E:\my_work\A3P250\project\RD_FLASH1\smartgen\fifo8b2048\fifo8b2048.v":389:9:389:15|Removing instance AND2_38 because it does not drive other instances. To preserve this instance, use the syn_noprune synthesis directive.
+@W: CL168 :"E:\my_work\A3P250\project\RD_FLASH1\smartgen\fifo8b2048\fifo8b2048.v":387:8:387:13|Removing instance MX2_35 because it does not drive other instances. To preserve this instance, use the syn_noprune synthesis directive.
+@W: CL168 :"E:\my_work\A3P250\project\RD_FLASH1\smartgen\fifo8b2048\fifo8b2048.v":384:9:384:15|Removing instance XOR2_30 because it does not drive other instances. To preserve this instance, use the syn_noprune synthesis directive.
+@W: CL168 :"E:\my_work\A3P250\project\RD_FLASH1\smartgen\fifo8b2048\fifo8b2048.v":377:11:377:25|Removing instance DFN1C0_WGRY[3] because it does not drive other instances. To preserve this instance, use the syn_noprune synthesis directive.
+@W: CL168 :"E:\my_work\A3P250\project\RD_FLASH1\smartgen\fifo8b2048\fifo8b2048.v":375:11:375:25|Removing instance DFN1C0_RGRY[1] because it does not drive other instances. To preserve this instance, use the syn_noprune synthesis directive.
+@W: CL168 :"E:\my_work\A3P250\project\RD_FLASH1\smartgen\fifo8b2048\fifo8b2048.v":369:11:369:26|Removing instance DFN1C0_RGRY[11] because it does not drive other instances. To preserve this instance, use the syn_noprune synthesis directive.
+@W: CL168 :"E:\my_work\A3P250\project\RD_FLASH1\smartgen\fifo8b2048\fifo8b2048.v":362:9:362:15|Removing instance AND2_31 because it does not drive other instances. To preserve this instance, use the syn_noprune synthesis directive.
+@W: CL168 :"E:\my_work\A3P250\project\RD_FLASH1\smartgen\fifo8b2048\fifo8b2048.v":331:9:331:15|Removing instance AND2_24 because it does not drive other instances. To preserve this instance, use the syn_noprune synthesis directive.
+@W: CL168 :"E:\my_work\A3P250\project\RD_FLASH1\smartgen\fifo8b2048\fifo8b2048.v":325:9:325:14|Removing instance XOR2_4 because it does not drive other instances. To preserve this instance, use the syn_noprune synthesis directive.
+@W: CL168 :"E:\my_work\A3P250\project\RD_FLASH1\smartgen\fifo8b2048\fifo8b2048.v":318:8:318:13|Removing instance MX2_31 because it does not drive other instances. To preserve this instance, use the syn_noprune synthesis directive.
+@W: CL168 :"E:\my_work\A3P250\project\RD_FLASH1\smartgen\fifo8b2048\fifo8b2048.v":286:9:286:15|Removing instance XOR2_33 because it does not drive other instances. To preserve this instance, use the syn_noprune synthesis directive.
+@W: CL168 :"E:\my_work\A3P250\project\RD_FLASH1\smartgen\fifo8b2048\fifo8b2048.v":283:11:283:25|Removing instance DFN1C0_RGRY[2] because it does not drive other instances. To preserve this instance, use the syn_noprune synthesis directive.
+@W: CL168 :"E:\my_work\A3P250\project\RD_FLASH1\smartgen\fifo8b2048\fifo8b2048.v":269:8:269:13|Removing instance MX2_20 because it does not drive other instances. To preserve this instance, use the syn_noprune synthesis directive.
+@W: CL168 :"E:\my_work\A3P250\project\RD_FLASH1\smartgen\fifo8b2048\fifo8b2048.v":268:8:268:12|Removing instance INV_5 because it does not drive other instances. To preserve this instance, use the syn_noprune synthesis directive.
+@W: CL168 :"E:\my_work\A3P250\project\RD_FLASH1\smartgen\fifo8b2048\fifo8b2048.v":260:9:260:15|Removing instance XOR2_60 because it does not drive other instances. To preserve this instance, use the syn_noprune synthesis directive.
+@W: CL168 :"E:\my_work\A3P250\project\RD_FLASH1\smartgen\fifo8b2048\fifo8b2048.v":258:9:258:15|Removing instance XOR2_16 because it does not drive other instances. To preserve this instance, use the syn_noprune synthesis directive.
+@W: CL168 :"E:\my_work\A3P250\project\RD_FLASH1\smartgen\fifo8b2048\fifo8b2048.v":246:9:246:15|Removing instance XOR2_21 because it does not drive other instances. To preserve this instance, use the syn_noprune synthesis directive.
+@W: CL168 :"E:\my_work\A3P250\project\RD_FLASH1\smartgen\fifo8b2048\fifo8b2048.v":241:9:241:15|Removing instance XOR2_24 because it does not drive other instances. To preserve this instance, use the syn_noprune synthesis directive.
+@W: CL168 :"E:\my_work\A3P250\project\RD_FLASH1\smartgen\fifo8b2048\fifo8b2048.v":236:11:236:25|Removing instance DFN1C0_WGRY[7] because it does not drive other instances. To preserve this instance, use the syn_noprune synthesis directive.
+@W: CL168 :"E:\my_work\A3P250\project\RD_FLASH1\smartgen\fifo8b2048\fifo8b2048.v":234:8:234:12|Removing instance MX2_5 because it does not drive other instances. To preserve this instance, use the syn_noprune synthesis directive.
+@W: CL168 :"E:\my_work\A3P250\project\RD_FLASH1\smartgen\fifo8b2048\fifo8b2048.v":230:8:230:13|Removing instance AO1_15 because it does not drive other instances. To preserve this instance, use the syn_noprune synthesis directive.
+@W: CL168 :"E:\my_work\A3P250\project\RD_FLASH1\smartgen\fifo8b2048\fifo8b2048.v":226:9:226:15|Removing instance XOR2_52 because it does not drive other instances. To preserve this instance, use the syn_noprune synthesis directive.
+@W: CL168 :"E:\my_work\A3P250\project\RD_FLASH1\smartgen\fifo8b2048\fifo8b2048.v":224:11:224:25|Removing instance DFN1C0_WGRY[5] because it does not drive other instances. To preserve this instance, use the syn_noprune synthesis directive.
+@W: CL168 :"E:\my_work\A3P250\project\RD_FLASH1\smartgen\fifo8b2048\fifo8b2048.v":223:9:223:15|Removing instance AND2_12 because it does not drive other instances. To preserve this instance, use the syn_noprune synthesis directive.
+@W: CL168 :"E:\my_work\A3P250\project\RD_FLASH1\smartgen\fifo8b2048\fifo8b2048.v":221:9:221:15|Removing instance XOR2_63 because it does not drive other instances. To preserve this instance, use the syn_noprune synthesis directive.
+@W: CL168 :"E:\my_work\A3P250\project\RD_FLASH1\smartgen\fifo8b2048\fifo8b2048.v":219:9:219:15|Removing instance XOR2_20 because it does not drive other instances. To preserve this instance, use the syn_noprune synthesis directive.
+@W: CL168 :"E:\my_work\A3P250\project\RD_FLASH1\smartgen\fifo8b2048\fifo8b2048.v":218:9:218:14|Removing instance AND2_7 because it does not drive other instances. To preserve this instance, use the syn_noprune synthesis directive.
+@W: CL168 :"E:\my_work\A3P250\project\RD_FLASH1\smartgen\fifo8b2048\fifo8b2048.v":175:9:175:15|Removing instance XOR2_45 because it does not drive other instances. To preserve this instance, use the syn_noprune synthesis directive.
+@W: CL168 :"E:\my_work\A3P250\project\RD_FLASH1\smartgen\fifo8b2048\fifo8b2048.v":173:8:173:12|Removing instance INV_7 because it does not drive other instances. To preserve this instance, use the syn_noprune synthesis directive.
+@W: CL168 :"E:\my_work\A3P250\project\RD_FLASH1\smartgen\fifo8b2048\fifo8b2048.v":169:11:169:25|Removing instance DFN1C0_WGRY[6] because it does not drive other instances. To preserve this instance, use the syn_noprune synthesis directive.
+@W: CL168 :"E:\my_work\A3P250\project\RD_FLASH1\smartgen\fifo8b2048\fifo8b2048.v":166:8:166:13|Removing instance MX2_21 because it does not drive other instances. To preserve this instance, use the syn_noprune synthesis directive.
+@W: CL168 :"E:\my_work\A3P250\project\RD_FLASH1\smartgen\fifo8b2048\fifo8b2048.v":155:8:155:12|Removing instance INV_1 because it does not drive other instances. To preserve this instance, use the syn_noprune synthesis directive.
+@W: CL168 :"E:\my_work\A3P250\project\RD_FLASH1\smartgen\fifo8b2048\fifo8b2048.v":146:8:146:13|Removing instance MX2_17 because it does not drive other instances. To preserve this instance, use the syn_noprune synthesis directive.
+@W: CL168 :"E:\my_work\A3P250\project\RD_FLASH1\smartgen\fifo8b2048\fifo8b2048.v":144:9:144:14|Removing instance XOR2_1 because it does not drive other instances. To preserve this instance, use the syn_noprune synthesis directive.
+@W: CL168 :"E:\my_work\A3P250\project\RD_FLASH1\smartgen\fifo8b2048\fifo8b2048.v":135:11:135:25|Removing instance DFN1C0_RGRY[9] because it does not drive other instances. To preserve this instance, use the syn_noprune synthesis directive.
+@W: CL168 :"E:\my_work\A3P250\project\RD_FLASH1\smartgen\fifo8b2048\fifo8b2048.v":134:9:134:15|Removing instance AND2_22 because it does not drive other instances. To preserve this instance, use the syn_noprune synthesis directive.
+@W: CL168 :"E:\my_work\A3P250\project\RD_FLASH1\smartgen\fifo8b2048\fifo8b2048.v":131:9:131:15|Removing instance AND2_11 because it does not drive other instances. To preserve this instance, use the syn_noprune synthesis directive.
+@W: CL168 :"E:\my_work\A3P250\project\RD_FLASH1\smartgen\fifo8b2048\fifo8b2048.v":127:9:127:15|Removing instance AND2_20 because it does not drive other instances. To preserve this instance, use the syn_noprune synthesis directive.
+@W: CL168 :"E:\my_work\A3P250\project\RD_FLASH1\smartgen\fifo8b2048\fifo8b2048.v":123:8:123:12|Removing instance INV_0 because it does not drive other instances. To preserve this instance, use the syn_noprune synthesis directive.
+@N: CG364 :"E:\my_work\A3P250\project\RD_FLASH1\hdl\flash_read_ctrl.v":4:8:4:22|Synthesizing module flash_read_ctrl in library work.
+
+	IDLE=3'b001
+	READ=3'b010
+	SEND=3'b100
+	READ_INST=8'b00000011
+	NUM_DATA=16'b0000000001100100
+	SECTOR_ADDR=8'b00000000
+	PAGE_ADDR=8'b00000000
+	BYTE_ADDR=8'b00000000
+	CNT_WAIT_MAX=16'b0100111000100000
+   Generated name = flash_read_ctrl_1_2_4_3_100_0_0_0_20000
+
+@N: CG179 :"E:\my_work\A3P250\project\RD_FLASH1\hdl\flash_read_ctrl.v":176:20:176:26|Removing redundant assignment.
+@N: CG364 :"E:\my_work\A3P250\project\RD_FLASH1\hdl\uart_tx.v":3:8:3:14|Synthesizing module uart_tx in library work.
+
+	UART_BPS=14'b10010110000000
+	CLK_FREQ=26'b00100110001001011010000000
+	BAUD_CNT_MAX=26'b00000000000000010000010001
+   Generated name = uart_tx_9600_10000000_1041
+
+@N: CG364 :"E:\my_work\A3P250\project\RD_FLASH1\hdl\spi_flash_read.v":5:8:5:21|Synthesizing module spi_flash_read in library work.
+
+@W: CS263 :"E:\my_work\A3P250\project\RD_FLASH1\hdl\spi_flash_read.v":50:18:50:18|Port-width mismatch for port POWERDOWN. The port definition is 1 bits, but the actual port connection bit width is 32. Adjust either the definition or the instantiation of this port.
+@W: CG360 :"E:\my_work\A3P250\project\RD_FLASH1\hdl\spi_flash_read.v":21:20:21:23|Removing wire tx_d, as there is no assignment to it.
+@W: CG360 :"E:\my_work\A3P250\project\RD_FLASH1\hdl\spi_flash_read.v":41:16:41:22|Removing wire ila_clk, as there is no assignment to it.
+@W: CL156 :"E:\my_work\A3P250\project\RD_FLASH1\hdl\spi_flash_read.v":41:16:41:22|*Input ila_clk to expression [instance] has undriven bits; assigning undriven bits to 0.  Simulation mismatch possible. Assign all bits of the input.
+@W: CL157 :"E:\my_work\A3P250\project\RD_FLASH1\hdl\spi_flash_read.v":21:20:21:23|*Output tx_d has undriven bits; assigning undriven bits to 0.  Simulation mismatch possible. Assign all bits of the output.
+@W: CL190 :"E:\my_work\A3P250\project\RD_FLASH1\hdl\flash_read_ctrl.v":210:0:210:5|Optimizing register bit read_data_num[7] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL260 :"E:\my_work\A3P250\project\RD_FLASH1\hdl\flash_read_ctrl.v":210:0:210:5|Pruning register bit 7 of read_data_num[7:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.
+@N: CL201 :"E:\my_work\A3P250\project\RD_FLASH1\hdl\flash_read_ctrl.v":107:0:107:5|Trying to extract state machine for register state.
+Extracted state machine for register state
+State machine has 3 reachable states with original encodings of:
+   001
+   010
+   100
+@N: CL159 :"E:\my_work\A3P250\project\RD_FLASH1\hdl\flash_read_ctrl.v":7:28:7:34|Input ila_clk is unused.

@@ -1,0 +1,630 @@
+# Wed Aug 21 16:55:42 2024
+
+Synopsys Microsemi Technology Mapper, Version mapact, Build 1920R, Built Nov 17 2016 09:40:34
+Copyright (C) 1994-2016 Synopsys, Inc. All rights reserved. This Synopsys software and all associated documentation are proprietary to Synopsys, Inc. and may only be used pursuant to the terms and conditions of a written license agreement with Synopsys, Inc. All other use, reproduction, modification, or distribution of the Synopsys software or the associated documentation is strictly prohibited.
+Product Version L-2016.09M-2
+
+Mapper Startup Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 99MB peak: 99MB)
+
+@N: MF248 |Running in 64-bit mode.
+@N: MF667 |Clock conversion disabled. (Command "set_option -fix_gated_and_generated_clocks 0" in the project file.)
+
+Design Input Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 99MB peak: 101MB)
+
+
+Mapper Initialization Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 99MB peak: 101MB)
+
+
+
+Starting Optimization and Mapping (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 108MB peak: 109MB)
+
+@N: MO111 :"e:\my_work\a3p250\project\rd_flash1\hdl\spi_flash_read.v":21:20:21:23|Tristate driver tx_d (in view: work.spi_flash_read(verilog)) on net tx_d (in view: work.spi_flash_read(verilog)) has its enable tied to GND.
+
+Available hyper_sources - for debug and ip models
+	None Found
+
+
+Finished RTL optimizations (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 109MB peak: 110MB)
+
+@N: MO231 :"e:\my_work\a3p250\project\rd_flash1\hdl\key_filter.v":27:0:27:5|Found counter in view:work.key_filter_999999(verilog) instance cnt_20ms[19:0] 
+@N: MO230 :"e:\my_work\a3p250\project\rd_flash1\hdl\flash_read_ctrl.v":225:0:225:5|Found up-down counter in view:work.flash_read_ctrl_1_2_4_3_100_0_0_0_20000(verilog) instance fifo_data_num[7:0]  
+@N: MO231 :"e:\my_work\a3p250\project\rd_flash1\hdl\flash_read_ctrl.v":100:0:100:5|Found counter in view:work.flash_read_ctrl_1_2_4_3_100_0_0_0_20000(verilog) instance cnt_bit[2:0] 
+@N: MO231 :"e:\my_work\a3p250\project\rd_flash1\hdl\flash_read_ctrl.v":59:0:59:5|Found counter in view:work.flash_read_ctrl_1_2_4_3_100_0_0_0_20000(verilog) instance cnt_clk[4:0] 
+Encoding state machine state[2:0] (in view: work.flash_read_ctrl_1_2_4_3_100_0_0_0_20000(verilog))
+original code -> new code
+   001 -> 00
+   010 -> 01
+   100 -> 10
+@N: MF238 :"e:\my_work\a3p250\project\rd_flash1\hdl\flash_read_ctrl.v":197:24:197:39|Found 16-bit incrementor, 'un3_cnt_wait_1[15:0]'
+@N: MO231 :"e:\my_work\a3p250\project\rd_flash1\hdl\uart_tx.v":42:0:42:5|Found counter in view:work.uart_tx_9600_10000000_1041(verilog) instance baud_cnt[12:0] 
+
+Starting factoring (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 109MB peak: 110MB)
+
+
+Finished factoring (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 111MB peak: 112MB)
+
+
+Finished gated-clock and generated-clock conversion (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 111MB peak: 112MB)
+
+
+Finished generic timing optimizations - Pass 1 (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 111MB peak: 112MB)
+
+
+Starting Early Timing Optimization (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 111MB peak: 112MB)
+
+
+Finished Early Timing Optimization (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 111MB peak: 112MB)
+
+
+Finished generic timing optimizations - Pass 2 (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 111MB peak: 112MB)
+
+
+Finished preparing to map (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 112MB peak: 112MB)
+
+
+Finished technology mapping (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 111MB peak: 112MB)
+
+
+High Fanout Net Report
+**********************
+
+Driver Instance / Pin Name     Fanout, notes                   
+---------------------------------------------------------------
+sys_rst_n_pad / Y              166 : 166 asynchronous set/reset
+===============================================================
+
+@N: FP130 |Promoting Net sys_rst_n_c on CLKBUF  sys_rst_n_pad 
+
+Finished technology timing optimizations and critical path resynthesis (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:00s; Memory used current: 115MB peak: 118MB)
+
+
+Added 0 Buffers
+Added 0 Cells via replication
+	Added 0 Sequential Cells via replication
+	Added 0 Combinational Cells via replication
+
+Finished restoring hierarchy (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:00s; Memory used current: 115MB peak: 118MB)
+
+
+
+@S |Clock Optimization Summary
+
+
+#### START OF CLOCK OPTIMIZATION REPORT #####[
+
+Clock optimization not enabled
+0 non-gated/non-generated clock tree(s) driving 0 clock pin(s) of sequential element(s)
+1 gated/generated clock tree(s) driving 170 clock pin(s) of sequential element(s)
+0 instances converted, 170 sequential instances remain driven by gated/generated clocks
+
+===================================================================================================== Gated/Generated Clocks =====================================================================================================
+Clock Tree ID     Driving Element     Drive Element Type     Fanout     Sample Instance             Explanation                                                                                                                   
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+@K:CKID0001       PLL.Core            PLL                    170        uart_tx_inst.bit_cnt[3]     Gating structure creates improper gating logic. See the Gated Clocks description in the user guide for conversion requirements
+==================================================================================================================================================================================================================================
+
+
+##### END OF CLOCK OPTIMIZATION REPORT ######]
+
+
+Start Writing Netlists (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:00s; Memory used current: 114MB peak: 118MB)
+
+Writing Analyst data base E:\my_work\A3P250\project\RD_FLASH1\synthesis\synwork\spi_flash_read_m.srm
+
+Finished Writing Netlist Databases (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 115MB peak: 118MB)
+
+Writing EDIF Netlist and constraint files
+L-2016.09M-2
+
+Finished Writing EDIF Netlist and constraint files (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 115MB peak: 118MB)
+
+
+Start final timing analysis (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 115MB peak: 118MB)
+
+@W: MT420 |Found inferred clock get_clk|GLA_inferred_clock with period 10.00ns. Please declare a user-defined clock on object "n:PLL.GLA"
+
+
+##### START OF TIMING REPORT #####[
+# Timing Report written on Wed Aug 21 16:55:43 2024
+#
+
+
+Top view:               spi_flash_read
+Library name:           PA3
+Operating conditions:   COMWC-1 ( T = 70.0, V = 1.42, P = 1.48, tree_type = balanced_tree )
+Requested Frequency:    100.0 MHz
+Wire load mode:         top
+Wire load model:        proasic3
+Paths requested:        5
+Constraint File(s):    
+@N: MT320 |This timing report is an estimate of place and route data. For final timing results, use the FPGA vendor place and route report.
+
+@N: MT322 |Clock constraints include only register-to-register paths associated with each individual clock.
+
+
+
+Performance Summary
+*******************
+
+
+Worst slack in design: -4.477
+
+                               Requested     Estimated     Requested     Estimated                Clock        Clock              
+Starting Clock                 Frequency     Frequency     Period        Period        Slack      Type         Group              
+----------------------------------------------------------------------------------------------------------------------------------
+get_clk|GLA_inferred_clock     100.0 MHz     69.1 MHz      10.000        14.477        -4.477     inferred     Inferred_clkgroup_0
+==================================================================================================================================
+
+
+
+
+
+Clock Relationships
+*******************
+
+Clocks                                                  |    rise  to  rise    |    fall  to  fall   |    rise  to  fall   |    fall  to  rise 
+-----------------------------------------------------------------------------------------------------------------------------------------------
+Starting                    Ending                      |  constraint  slack   |  constraint  slack  |  constraint  slack  |  constraint  slack
+-----------------------------------------------------------------------------------------------------------------------------------------------
+get_clk|GLA_inferred_clock  get_clk|GLA_inferred_clock  |  10.000      -4.477  |  No paths    -      |  No paths    -      |  No paths    -    
+===============================================================================================================================================
+ Note: 'No paths' indicates there are no paths in the design for that pair of clock edges.
+       'Diff grp' indicates that paths exist but the starting clock and ending clock are in different clock groups.
+
+
+
+Interface Information 
+*********************
+
+No IO constraint found
+
+
+
+====================================
+Detailed Report for Clock: get_clk|GLA_inferred_clock
+====================================
+
+
+
+Starting Points with Worst Slack
+********************************
+
+                                          Starting                                                           Arrival           
+Instance                                  Reference                      Type       Pin     Net              Time        Slack 
+                                          Clock                                                                                
+-------------------------------------------------------------------------------------------------------------------------------
+flash_read_ctrl_inst.po_flag              get_clk|GLA_inferred_clock     DFN1C0     Q       po_flag          0.627       -4.477
+flash_read_ctrl_inst.cnt_byte[4]          get_clk|GLA_inferred_clock     DFN1C0     Q       cnt_byte[4]      0.627       -4.098
+key_filter_inst.cnt_20ms[1]               get_clk|GLA_inferred_clock     DFN1C0     Q       cnt_20ms[1]      0.627       -3.884
+key_filter_inst.cnt_20ms[0]               get_clk|GLA_inferred_clock     DFN1C0     Q       cnt_20ms[0]      0.627       -3.844
+flash_read_ctrl_inst.cnt_byte[14]         get_clk|GLA_inferred_clock     DFN1C0     Q       cnt_byte[14]     0.627       -3.801
+flash_read_ctrl_inst.cnt_byte[13]         get_clk|GLA_inferred_clock     DFN1C0     Q       cnt_byte[13]     0.627       -3.683
+flash_read_ctrl_inst.cnt_byte[3]          get_clk|GLA_inferred_clock     DFN1C0     Q       cnt_byte[3]      0.627       -3.659
+key_filter_inst.cnt_20ms[2]               get_clk|GLA_inferred_clock     DFN1C0     Q       cnt_20ms[2]      0.627       -3.593
+flash_read_ctrl_inst.fifo_read_en         get_clk|GLA_inferred_clock     DFN1C0     Q       fifo_read_en     0.627       -3.458
+flash_read_ctrl_inst.FIFO.DFN1C0_FULL     get_clk|GLA_inferred_clock     DFN1C0     Q       FULL             0.494       -3.361
+===============================================================================================================================
+
+
+Ending Points with Worst Slack
+******************************
+
+                                           Starting                                                               Required           
+Instance                                   Reference                      Type       Pin     Net                  Time         Slack 
+                                           Clock                                                                                     
+-------------------------------------------------------------------------------------------------------------------------------------
+flash_read_ctrl_inst.FIFO.DFN1C0_FULL      get_clk|GLA_inferred_clock     DFN1C0     D       FULLINT              9.542        -4.477
+flash_read_ctrl_inst.cnt_byte[15]          get_clk|GLA_inferred_clock     DFN1C0     D       I_51                 9.542        -4.098
+key_filter_inst.cnt_20ms[19]               get_clk|GLA_inferred_clock     DFN1C0     D       cnt_20ms_RNO[19]     9.542        -3.884
+key_filter_inst.cnt_20ms[18]               get_clk|GLA_inferred_clock     DFN1C0     D       cnt_20ms_RNO[18]     9.512        -3.784
+flash_read_ctrl_inst.FIFO.DFN1P0_EMPTY     get_clk|GLA_inferred_clock     DFN1P0     D       EMPTYINT             9.542        -3.458
+flash_read_ctrl_inst.cnt_byte[14]          get_clk|GLA_inferred_clock     DFN1C0     D       I_52                 9.542        -3.387
+flash_read_ctrl_inst.cnt_byte[13]          get_clk|GLA_inferred_clock     DFN1C0     D       I_57                 9.542        -3.332
+key_filter_inst.cnt_20ms[17]               get_clk|GLA_inferred_clock     DFN1C0     D       cnt_20ms_RNO[17]     9.512        -3.018
+key_filter_inst.cnt_20ms[16]               get_clk|GLA_inferred_clock     DFN1C0     D       cnt_20ms_RNO[16]     9.542        -3.009
+flash_read_ctrl_inst.cnt_byte[11]          get_clk|GLA_inferred_clock     DFN1C0     D       I_61                 9.542        -2.974
+=====================================================================================================================================
+
+
+
+Worst Path Information
+***********************
+
+
+Path information for path number 1: 
+      Requested Period:                      10.000
+    - Setup time:                            0.458
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         9.542
+
+    - Propagation time:                      14.018
+    - Clock delay at starting point:         0.000 (ideal)
+    = Slack (critical) :                     -4.477
+
+    Number of logic level(s):                12
+    Starting point:                          flash_read_ctrl_inst.po_flag / Q
+    Ending point:                            flash_read_ctrl_inst.FIFO.DFN1C0_FULL / D
+    The start point is clocked by            get_clk|GLA_inferred_clock [rising] on pin CLK
+    The end   point is clocked by            get_clk|GLA_inferred_clock [rising] on pin CLK
+
+Instance / Net                                                         Pin      Pin               Arrival     No. of    
+Name                                                        Type       Name     Dir     Delay     Time        Fan Out(s)
+------------------------------------------------------------------------------------------------------------------------
+flash_read_ctrl_inst.po_flag                                DFN1C0     Q        Out     0.627     0.627       -         
+po_flag                                                     Net        -        -       1.849     -           16        
+flash_read_ctrl_inst.FIFO.NAND2_1_RNITELM                   AND2       B        In      -         2.476       -         
+flash_read_ctrl_inst.FIFO.NAND2_1_RNITELM                   AND2       Y        Out     0.534     3.010       -         
+MEMORYWE                                                    Net        -        -       0.686     -           3         
+flash_read_ctrl_inst.FIFO.DFN1C0_MEM_WADDR\[0\]_RNIA5LU     AND2       B        In      -         3.696       -         
+flash_read_ctrl_inst.FIFO.DFN1C0_MEM_WADDR\[0\]_RNIA5LU     AND2       Y        Out     0.534     4.230       -         
+AND2_26_Y                                                   Net        -        -       0.328     -           2         
+flash_read_ctrl_inst.FIFO.XOR2_27_RNIS50A1                  AO1        B        In      -         4.558       -         
+flash_read_ctrl_inst.FIFO.XOR2_27_RNIS50A1                  AO1        Y        Out     0.509     5.067       -         
+AO1_1_Y                                                     Net        -        -       0.686     -           3         
+flash_read_ctrl_inst.FIFO.XOR2_15_RNI9AN92                  AO1        B        In      -         5.753       -         
+flash_read_ctrl_inst.FIFO.XOR2_15_RNI9AN92                  AO1        Y        Out     0.509     6.262       -         
+AO1_24_Y                                                    Net        -        -       1.007     -           4         
+flash_read_ctrl_inst.FIFO.XOR2_55_RNIUK143                  AO1        B        In      -         7.269       -         
+flash_read_ctrl_inst.FIFO.XOR2_55_RNIUK143                  AO1        Y        Out     0.509     7.778       -         
+AO1_9_Y                                                     Net        -        -       0.328     -           2         
+flash_read_ctrl_inst.FIFO.AND2_49_RNITT0N3                  AO1        B        In      -         8.106       -         
+flash_read_ctrl_inst.FIFO.AND2_49_RNITT0N3                  AO1        Y        Out     0.509     8.615       -         
+AO1_10_Y                                                    Net        -        -       0.274     -           1         
+flash_read_ctrl_inst.FIFO.XOR2_65_RNIC5LQ3                  XOR2       B        In      -         8.888       -         
+flash_read_ctrl_inst.FIFO.XOR2_65_RNIC5LQ3                  XOR2       Y        Out     0.797     9.685       -         
+WBINNXTSHIFT\[7\]                                           Net        -        -       0.328     -           2         
+flash_read_ctrl_inst.FIFO.DFN1C0_FULL_RNO_8                 XNOR2      B        In      -         10.014      -         
+flash_read_ctrl_inst.FIFO.DFN1C0_FULL_RNO_8                 XNOR2      Y        Out     0.797     10.811      -         
+XNOR2_7_Y                                                   Net        -        -       0.274     -           1         
+flash_read_ctrl_inst.FIFO.DFN1C0_FULL_RNO_5                 AND3       B        In      -         11.084      -         
+flash_read_ctrl_inst.FIFO.DFN1C0_FULL_RNO_5                 AND3       Y        Out     0.531     11.615      -         
+AND3_4_Y                                                    Net        -        -       0.274     -           1         
+flash_read_ctrl_inst.FIFO.DFN1C0_FULL_RNO_2                 AND3       A        In      -         11.889      -         
+flash_read_ctrl_inst.FIFO.DFN1C0_FULL_RNO_2                 AND3       Y        Out     0.447     12.336      -         
+AND3_2_Y                                                    Net        -        -       0.274     -           1         
+flash_read_ctrl_inst.FIFO.DFN1C0_FULL_RNO_0                 AND3       A        In      -         12.609      -         
+flash_read_ctrl_inst.FIFO.DFN1C0_FULL_RNO_0                 AND3       Y        Out     0.447     13.056      -         
+AND3_1_Y                                                    Net        -        -       0.274     -           1         
+flash_read_ctrl_inst.FIFO.DFN1C0_FULL_RNO                   AND2       A        In      -         13.329      -         
+flash_read_ctrl_inst.FIFO.DFN1C0_FULL_RNO                   AND2       Y        Out     0.415     13.745      -         
+FULLINT                                                     Net        -        -       0.274     -           1         
+flash_read_ctrl_inst.FIFO.DFN1C0_FULL                       DFN1C0     D        In      -         14.018      -         
+========================================================================================================================
+Total path delay (propagation time + setup) of 14.477 is 7.622(52.6%) logic and 6.855(47.4%) route.
+Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
+
+
+Path information for path number 2: 
+      Requested Period:                      10.000
+    - Setup time:                            0.458
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         9.542
+
+    - Propagation time:                      13.640
+    - Clock delay at starting point:         0.000 (ideal)
+    = Slack (non-critical) :                 -4.098
+
+    Number of logic level(s):                12
+    Starting point:                          flash_read_ctrl_inst.cnt_byte[4] / Q
+    Ending point:                            flash_read_ctrl_inst.cnt_byte[15] / D
+    The start point is clocked by            get_clk|GLA_inferred_clock [rising] on pin CLK
+    The end   point is clocked by            get_clk|GLA_inferred_clock [rising] on pin CLK
+
+Instance / Net                                            Pin      Pin               Arrival     No. of    
+Name                                           Type       Name     Dir     Delay     Time        Fan Out(s)
+-----------------------------------------------------------------------------------------------------------
+flash_read_ctrl_inst.cnt_byte[4]               DFN1C0     Q        Out     0.627     0.627       -         
+cnt_byte[4]                                    Net        -        -       1.007     -           4         
+flash_read_ctrl_inst.cnt_byte_RNIN9PN[3]       NOR2       B        In      -         1.634       -         
+flash_read_ctrl_inst.cnt_byte_RNIN9PN[3]       NOR2       Y        Out     0.550     2.184       -         
+un1_cnt_byte_1_3                               Net        -        -       0.328     -           2         
+flash_read_ctrl_inst.cnt_byte_RNIINIF1[5]      NOR3C      C        In      -         2.513       -         
+flash_read_ctrl_inst.cnt_byte_RNIINIF1[5]      NOR3C      Y        Out     0.566     3.079       -         
+un1_cnt_byte_1_9                               Net        -        -       0.274     -           1         
+flash_read_ctrl_inst.cnt_byte_RNIB3MR2[15]     NOR3C      C        In      -         3.353       -         
+flash_read_ctrl_inst.cnt_byte_RNIB3MR2[15]     NOR3C      Y        Out     0.566     3.919       -         
+un1_cnt_byte_1_12                              Net        -        -       0.328     -           2         
+flash_read_ctrl_inst.cnt_clk_RNIIIB77_0[4]     AOI1B      B        In      -         4.247       -         
+flash_read_ctrl_inst.cnt_clk_RNIIIB77_0[4]     AOI1B      Y        Out     0.516     4.763       -         
+cnt_byte9                                      Net        -        -       0.328     -           2         
+flash_read_ctrl_inst.un1_cnt_byte_4.I_1        AND2       B        In      -         5.092       -         
+flash_read_ctrl_inst.un1_cnt_byte_4.I_1        AND2       Y        Out     0.534     5.626       -         
+DWACT_ADD_CI_0_TMP[0]                          Net        -        -       0.328     -           2         
+flash_read_ctrl_inst.un1_cnt_byte_4.I_67       NOR2B      A        In      -         5.954       -         
+flash_read_ctrl_inst.un1_cnt_byte_4.I_67       NOR2B      Y        Out     0.438     6.392       -         
+DWACT_ADD_CI_0_g_array_1[0]                    Net        -        -       0.686     -           3         
+flash_read_ctrl_inst.un1_cnt_byte_4.I_84       NOR2B      A        In      -         7.078       -         
+flash_read_ctrl_inst.un1_cnt_byte_4.I_84       NOR2B      Y        Out     0.438     7.516       -         
+DWACT_ADD_CI_0_g_array_2[0]                    Net        -        -       1.007     -           4         
+flash_read_ctrl_inst.un1_cnt_byte_4.I_81       NOR2B      A        In      -         8.523       -         
+flash_read_ctrl_inst.un1_cnt_byte_4.I_81       NOR2B      Y        Out     0.438     8.960       -         
+DWACT_ADD_CI_0_g_array_3[0]                    Net        -        -       1.007     -           4         
+flash_read_ctrl_inst.un1_cnt_byte_4.I_90       NOR2B      A        In      -         9.968       -         
+flash_read_ctrl_inst.un1_cnt_byte_4.I_90       NOR2B      Y        Out     0.438     10.405      -         
+DWACT_ADD_CI_0_g_array_10[0]                   Net        -        -       0.686     -           3         
+flash_read_ctrl_inst.un1_cnt_byte_4.I_75       NOR2B      A        In      -         11.092      -         
+flash_read_ctrl_inst.un1_cnt_byte_4.I_75       NOR2B      Y        Out     0.438     11.529      -         
+DWACT_ADD_CI_0_g_array_11_2[0]                 Net        -        -       0.328     -           2         
+flash_read_ctrl_inst.un1_cnt_byte_4.I_77       NOR2B      A        In      -         11.858      -         
+flash_read_ctrl_inst.un1_cnt_byte_4.I_77       NOR2B      Y        Out     0.438     12.295      -         
+DWACT_ADD_CI_0_g_array_12_6[0]                 Net        -        -       0.274     -           1         
+flash_read_ctrl_inst.un1_cnt_byte_4.I_51       XOR2       B        In      -         12.569      -         
+flash_read_ctrl_inst.un1_cnt_byte_4.I_51       XOR2       Y        Out     0.797     13.366      -         
+I_51                                           Net        -        -       0.274     -           1         
+flash_read_ctrl_inst.cnt_byte[15]              DFN1C0     D        In      -         13.640      -         
+===========================================================================================================
+Total path delay (propagation time + setup) of 14.098 is 7.242(51.4%) logic and 6.857(48.6%) route.
+Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
+
+
+Path information for path number 3: 
+      Requested Period:                      10.000
+    - Setup time:                            0.458
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         9.542
+
+    - Propagation time:                      13.630
+    - Clock delay at starting point:         0.000 (ideal)
+    = Slack (non-critical) :                 -4.088
+
+    Number of logic level(s):                11
+    Starting point:                          flash_read_ctrl_inst.po_flag / Q
+    Ending point:                            flash_read_ctrl_inst.FIFO.DFN1C0_FULL / D
+    The start point is clocked by            get_clk|GLA_inferred_clock [rising] on pin CLK
+    The end   point is clocked by            get_clk|GLA_inferred_clock [rising] on pin CLK
+
+Instance / Net                                                         Pin      Pin               Arrival     No. of    
+Name                                                        Type       Name     Dir     Delay     Time        Fan Out(s)
+------------------------------------------------------------------------------------------------------------------------
+flash_read_ctrl_inst.po_flag                                DFN1C0     Q        Out     0.627     0.627       -         
+po_flag                                                     Net        -        -       1.849     -           16        
+flash_read_ctrl_inst.FIFO.NAND2_1_RNITELM                   AND2       B        In      -         2.476       -         
+flash_read_ctrl_inst.FIFO.NAND2_1_RNITELM                   AND2       Y        Out     0.534     3.010       -         
+MEMORYWE                                                    Net        -        -       0.686     -           3         
+flash_read_ctrl_inst.FIFO.DFN1C0_MEM_WADDR\[0\]_RNIA5LU     AND2       B        In      -         3.696       -         
+flash_read_ctrl_inst.FIFO.DFN1C0_MEM_WADDR\[0\]_RNIA5LU     AND2       Y        Out     0.534     4.230       -         
+AND2_26_Y                                                   Net        -        -       0.328     -           2         
+flash_read_ctrl_inst.FIFO.XOR2_27_RNIS50A1                  AO1        B        In      -         4.558       -         
+flash_read_ctrl_inst.FIFO.XOR2_27_RNIS50A1                  AO1        Y        Out     0.509     5.067       -         
+AO1_1_Y                                                     Net        -        -       0.686     -           3         
+flash_read_ctrl_inst.FIFO.XOR2_15_RNI9AN92                  AO1        B        In      -         5.753       -         
+flash_read_ctrl_inst.FIFO.XOR2_15_RNI9AN92                  AO1        Y        Out     0.509     6.262       -         
+AO1_24_Y                                                    Net        -        -       1.007     -           4         
+flash_read_ctrl_inst.FIFO.XOR2_46_RNIUJSK4                  AO1        B        In      -         7.269       -         
+flash_read_ctrl_inst.FIFO.XOR2_46_RNIUJSK4                  AO1        Y        Out     0.509     7.778       -         
+AO1_5_Y                                                     Net        -        -       0.686     -           3         
+flash_read_ctrl_inst.FIFO.XOR2_69_RNIHRGO4                  XOR2       B        In      -         8.464       -         
+flash_read_ctrl_inst.FIFO.XOR2_69_RNIHRGO4                  XOR2       Y        Out     0.797     9.261       -         
+WBINNXTSHIFT\[8\]                                           Net        -        -       0.328     -           2         
+flash_read_ctrl_inst.FIFO.DFN1C0_FULL_RNO_9                 XNOR2      B        In      -         9.589       -         
+flash_read_ctrl_inst.FIFO.DFN1C0_FULL_RNO_9                 XNOR2      Y        Out     0.797     10.387      -         
+XNOR2_2_Y                                                   Net        -        -       0.274     -           1         
+flash_read_ctrl_inst.FIFO.DFN1C0_FULL_RNO_5                 AND3       C        In      -         10.660      -         
+flash_read_ctrl_inst.FIFO.DFN1C0_FULL_RNO_5                 AND3       Y        Out     0.566     11.227      -         
+AND3_4_Y                                                    Net        -        -       0.274     -           1         
+flash_read_ctrl_inst.FIFO.DFN1C0_FULL_RNO_2                 AND3       A        In      -         11.500      -         
+flash_read_ctrl_inst.FIFO.DFN1C0_FULL_RNO_2                 AND3       Y        Out     0.447     11.947      -         
+AND3_2_Y                                                    Net        -        -       0.274     -           1         
+flash_read_ctrl_inst.FIFO.DFN1C0_FULL_RNO_0                 AND3       A        In      -         12.220      -         
+flash_read_ctrl_inst.FIFO.DFN1C0_FULL_RNO_0                 AND3       Y        Out     0.447     12.667      -         
+AND3_1_Y                                                    Net        -        -       0.274     -           1         
+flash_read_ctrl_inst.FIFO.DFN1C0_FULL_RNO                   AND2       A        In      -         12.941      -         
+flash_read_ctrl_inst.FIFO.DFN1C0_FULL_RNO                   AND2       Y        Out     0.415     13.356      -         
+FULLINT                                                     Net        -        -       0.274     -           1         
+flash_read_ctrl_inst.FIFO.DFN1C0_FULL                       DFN1C0     D        In      -         13.630      -         
+========================================================================================================================
+Total path delay (propagation time + setup) of 14.088 is 7.149(50.7%) logic and 6.939(49.3%) route.
+Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
+
+
+Path information for path number 4: 
+      Requested Period:                      10.000
+    - Setup time:                            0.458
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         9.542
+
+    - Propagation time:                      13.426
+    - Clock delay at starting point:         0.000 (ideal)
+    = Slack (non-critical) :                 -3.884
+
+    Number of logic level(s):                11
+    Starting point:                          key_filter_inst.cnt_20ms[1] / Q
+    Ending point:                            key_filter_inst.cnt_20ms[19] / D
+    The start point is clocked by            get_clk|GLA_inferred_clock [rising] on pin CLK
+    The end   point is clocked by            get_clk|GLA_inferred_clock [rising] on pin CLK
+
+Instance / Net                                       Pin      Pin               Arrival     No. of    
+Name                                      Type       Name     Dir     Delay     Time        Fan Out(s)
+------------------------------------------------------------------------------------------------------
+key_filter_inst.cnt_20ms[1]               DFN1C0     Q        Out     0.627     0.627       -         
+cnt_20ms[1]                               Net        -        -       1.007     -           4         
+key_filter_inst.cnt_20ms_RNIOO9D1[2]      NOR3C      B        In      -         1.634       -         
+key_filter_inst.cnt_20ms_RNIOO9D1[2]      NOR3C      Y        Out     0.516     2.150       -         
+cnt_20ms_c2                               Net        -        -       0.328     -           2         
+key_filter_inst.cnt_20ms_RNI23DS1[3]      NOR2B      A        In      -         2.479       -         
+key_filter_inst.cnt_20ms_RNI23DS1[3]      NOR2B      Y        Out     0.438     2.916       -         
+cnt_20ms_c3                               Net        -        -       0.686     -           3         
+key_filter_inst.cnt_20ms_RNIDEGB2[4]      NOR2B      A        In      -         3.603       -         
+key_filter_inst.cnt_20ms_RNIDEGB2[4]      NOR2B      Y        Out     0.438     4.040       -         
+cnt_20ms_c4                               Net        -        -       0.686     -           3         
+key_filter_inst.cnt_20ms_RNI68N93[6]      NOR3C      B        In      -         4.727       -         
+key_filter_inst.cnt_20ms_RNI68N93[6]      NOR3C      Y        Out     0.516     5.243       -         
+cnt_20ms_c6                               Net        -        -       0.686     -           3         
+key_filter_inst.cnt_20ms_RNI36U74[8]      NOR3C      B        In      -         5.929       -         
+key_filter_inst.cnt_20ms_RNI36U74[8]      NOR3C      Y        Out     0.516     6.445       -         
+cnt_20ms_c8                               Net        -        -       0.686     -           3         
+key_filter_inst.cnt_20ms_RNIBRBP4[10]     NOR3C      B        In      -         7.131       -         
+key_filter_inst.cnt_20ms_RNIBRBP4[10]     NOR3C      Y        Out     0.516     7.648       -         
+cnt_20ms_c10                              Net        -        -       0.686     -           3         
+key_filter_inst.cnt_20ms_RNIU70U4[12]     NOR3C      B        In      -         8.334       -         
+key_filter_inst.cnt_20ms_RNIU70U4[12]     NOR3C      Y        Out     0.516     8.850       -         
+cnt_20ms_c12                              Net        -        -       0.686     -           3         
+key_filter_inst.cnt_20ms_RNILOK25[13]     NOR3C      B        In      -         9.536       -         
+key_filter_inst.cnt_20ms_RNILOK25[13]     NOR3C      Y        Out     0.516     10.052      -         
+cnt_20ms_c14                              Net        -        -       0.686     -           3         
+key_filter_inst.cnt_20ms_RNIGD975[16]     NOR3C      B        In      -         10.739      -         
+key_filter_inst.cnt_20ms_RNIGD975[16]     NOR3C      Y        Out     0.516     11.255      -         
+cnt_20ms_c16                              Net        -        -       0.328     -           2         
+key_filter_inst.cnt_20ms_RNIFPJ95[17]     NOR2B      A        In      -         11.583      -         
+key_filter_inst.cnt_20ms_RNIFPJ95[17]     NOR2B      Y        Out     0.438     12.021      -         
+cnt_20ms_c17                              Net        -        -       0.328     -           2         
+key_filter_inst.cnt_20ms_RNO[19]          AX1C       A        In      -         12.349      -         
+key_filter_inst.cnt_20ms_RNO[19]          AX1C       Y        Out     0.803     13.152      -         
+cnt_20ms_RNO[19]                          Net        -        -       0.274     -           1         
+key_filter_inst.cnt_20ms[19]              DFN1C0     D        In      -         13.426      -         
+======================================================================================================
+Total path delay (propagation time + setup) of 13.884 is 6.814(49.1%) logic and 7.070(50.9%) route.
+Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
+
+
+Path information for path number 5: 
+      Requested Period:                      10.000
+    - Setup time:                            0.458
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         9.542
+
+    - Propagation time:                      13.386
+    - Clock delay at starting point:         0.000 (ideal)
+    = Slack (non-critical) :                 -3.844
+
+    Number of logic level(s):                11
+    Starting point:                          key_filter_inst.cnt_20ms[0] / Q
+    Ending point:                            key_filter_inst.cnt_20ms[19] / D
+    The start point is clocked by            get_clk|GLA_inferred_clock [rising] on pin CLK
+    The end   point is clocked by            get_clk|GLA_inferred_clock [rising] on pin CLK
+
+Instance / Net                                       Pin      Pin               Arrival     No. of    
+Name                                      Type       Name     Dir     Delay     Time        Fan Out(s)
+------------------------------------------------------------------------------------------------------
+key_filter_inst.cnt_20ms[0]               DFN1C0     Q        Out     0.627     0.627       -         
+cnt_20ms[0]                               Net        -        -       1.089     -           5         
+key_filter_inst.cnt_20ms_RNIOO9D1[2]      NOR3C      A        In      -         1.716       -         
+key_filter_inst.cnt_20ms_RNIOO9D1[2]      NOR3C      Y        Out     0.395     2.110       -         
+cnt_20ms_c2                               Net        -        -       0.328     -           2         
+key_filter_inst.cnt_20ms_RNI23DS1[3]      NOR2B      A        In      -         2.439       -         
+key_filter_inst.cnt_20ms_RNI23DS1[3]      NOR2B      Y        Out     0.438     2.876       -         
+cnt_20ms_c3                               Net        -        -       0.686     -           3         
+key_filter_inst.cnt_20ms_RNIDEGB2[4]      NOR2B      A        In      -         3.563       -         
+key_filter_inst.cnt_20ms_RNIDEGB2[4]      NOR2B      Y        Out     0.438     4.000       -         
+cnt_20ms_c4                               Net        -        -       0.686     -           3         
+key_filter_inst.cnt_20ms_RNI68N93[6]      NOR3C      B        In      -         4.687       -         
+key_filter_inst.cnt_20ms_RNI68N93[6]      NOR3C      Y        Out     0.516     5.203       -         
+cnt_20ms_c6                               Net        -        -       0.686     -           3         
+key_filter_inst.cnt_20ms_RNI36U74[8]      NOR3C      B        In      -         5.889       -         
+key_filter_inst.cnt_20ms_RNI36U74[8]      NOR3C      Y        Out     0.516     6.405       -         
+cnt_20ms_c8                               Net        -        -       0.686     -           3         
+key_filter_inst.cnt_20ms_RNIBRBP4[10]     NOR3C      B        In      -         7.091       -         
+key_filter_inst.cnt_20ms_RNIBRBP4[10]     NOR3C      Y        Out     0.516     7.607       -         
+cnt_20ms_c10                              Net        -        -       0.686     -           3         
+key_filter_inst.cnt_20ms_RNIU70U4[12]     NOR3C      B        In      -         8.294       -         
+key_filter_inst.cnt_20ms_RNIU70U4[12]     NOR3C      Y        Out     0.516     8.810       -         
+cnt_20ms_c12                              Net        -        -       0.686     -           3         
+key_filter_inst.cnt_20ms_RNILOK25[13]     NOR3C      B        In      -         9.496       -         
+key_filter_inst.cnt_20ms_RNILOK25[13]     NOR3C      Y        Out     0.516     10.012      -         
+cnt_20ms_c14                              Net        -        -       0.686     -           3         
+key_filter_inst.cnt_20ms_RNIGD975[16]     NOR3C      B        In      -         10.699      -         
+key_filter_inst.cnt_20ms_RNIGD975[16]     NOR3C      Y        Out     0.516     11.215      -         
+cnt_20ms_c16                              Net        -        -       0.328     -           2         
+key_filter_inst.cnt_20ms_RNIFPJ95[17]     NOR2B      A        In      -         11.543      -         
+key_filter_inst.cnt_20ms_RNIFPJ95[17]     NOR2B      Y        Out     0.438     11.981      -         
+cnt_20ms_c17                              Net        -        -       0.328     -           2         
+key_filter_inst.cnt_20ms_RNO[19]          AX1C       A        In      -         12.309      -         
+key_filter_inst.cnt_20ms_RNO[19]          AX1C       Y        Out     0.803     13.112      -         
+cnt_20ms_RNO[19]                          Net        -        -       0.274     -           1         
+key_filter_inst.cnt_20ms[19]              DFN1C0     D        In      -         13.386      -         
+======================================================================================================
+Total path delay (propagation time + setup) of 13.844 is 6.693(48.3%) logic and 7.151(51.7%) route.
+Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
+
+
+
+##### END OF TIMING REPORT #####]
+
+Timing exceptions that could not be applied
+None
+
+Finished final timing analysis (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 115MB peak: 118MB)
+
+
+Finished timing report (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 115MB peak: 118MB)
+
+--------------------------------------------------------------------------------
+Target Part: A3P250_VQFP100_-1
+Report for cell spi_flash_read.verilog
+  Core Cell usage:
+              cell count     area count*area
+              AND2    53      1.0       53.0
+             AND2A     1      1.0        1.0
+              AND3    27      1.0       27.0
+               AO1    31      1.0       31.0
+              AO13     5      1.0        5.0
+              AO1B     1      1.0        1.0
+              AO1D     1      1.0        1.0
+             AOI1B     4      1.0        4.0
+              AX1C    15      1.0       15.0
+              AX1D     1      1.0        1.0
+              BUFF     2      1.0        2.0
+               GND     6      0.0        0.0
+               INV     5      1.0        5.0
+               MX2    31      1.0       31.0
+              MX2A     6      1.0        6.0
+              MX2B     1      1.0        1.0
+              MX2C     2      1.0        2.0
+             NAND2     4      1.0        4.0
+              NOR2    18      1.0       18.0
+             NOR2A    31      1.0       31.0
+             NOR2B    53      1.0       53.0
+              NOR3     2      1.0        2.0
+             NOR3A    16      1.0       16.0
+             NOR3B    13      1.0       13.0
+             NOR3C    27      1.0       27.0
+              OA1A     1      1.0        1.0
+              OA1C     1      1.0        1.0
+               OR2    12      1.0       12.0
+              OR2A     6      1.0        6.0
+              OR2B     6      1.0        6.0
+              OR3A     3      1.0        3.0
+              OR3B     2      1.0        2.0
+               PLL     1      0.0        0.0
+               VCC     6      0.0        0.0
+              XA1B    17      1.0       17.0
+             XNOR2    25      1.0       25.0
+             XNOR3     7      1.0        7.0
+              XOR2   116      1.0      116.0
+
+
+            DFN1C0   124      1.0      124.0
+          DFN1E0C0     3      1.0        3.0
+          DFN1E0P0     1      1.0        1.0
+          DFN1E1C0    32      1.0       32.0
+          DFN1E1P0     1      1.0        1.0
+            DFN1P0     1      1.0        1.0
+            RAM4K9     4      0.0        0.0
+                   -----          ----------
+             TOTAL   725               708.0
+
+
+  IO Cell usage:
+              cell count
+            CLKBUF     1
+             INBUF     3
+            OUTBUF     8
+           TRIBUFF     1
+                   -----
+             TOTAL    13
+
+
+Core Cells         : 708 of 6144 (12%)
+IO Cells           : 13
+
+  RAM/ROM Usage Summary
+Block Rams : 4 of 8 (50%)
+
+Mapper successful!
+
+At Mapper Exit (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 26MB peak: 118MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+# Wed Aug 21 16:55:43 2024
+
+###########################################################]

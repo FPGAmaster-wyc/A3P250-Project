@@ -1,0 +1,12 @@
+@N: MF248 |Running in 64-bit mode.
+@N: MF667 |Clock conversion disabled. (Command "set_option -fix_gated_and_generated_clocks 0" in the project file.)
+@N: MO111 :"e:\my_work\a3p250\project\rd_flash1\hdl\spi_flash_read.v":21:20:21:23|Tristate driver tx_d (in view: work.spi_flash_read(verilog)) on net tx_d (in view: work.spi_flash_read(verilog)) has its enable tied to GND.
+@N: MO231 :"e:\my_work\a3p250\project\rd_flash1\hdl\key_filter.v":27:0:27:5|Found counter in view:work.key_filter_999999(verilog) instance cnt_20ms[19:0] 
+@N: MO230 :"e:\my_work\a3p250\project\rd_flash1\hdl\flash_read_ctrl.v":225:0:225:5|Found up-down counter in view:work.flash_read_ctrl_1_2_4_3_100_0_0_0_20000(verilog) instance fifo_data_num[7:0]  
+@N: MO231 :"e:\my_work\a3p250\project\rd_flash1\hdl\flash_read_ctrl.v":100:0:100:5|Found counter in view:work.flash_read_ctrl_1_2_4_3_100_0_0_0_20000(verilog) instance cnt_bit[2:0] 
+@N: MO231 :"e:\my_work\a3p250\project\rd_flash1\hdl\flash_read_ctrl.v":59:0:59:5|Found counter in view:work.flash_read_ctrl_1_2_4_3_100_0_0_0_20000(verilog) instance cnt_clk[4:0] 
+@N: MF238 :"e:\my_work\a3p250\project\rd_flash1\hdl\flash_read_ctrl.v":197:24:197:39|Found 16-bit incrementor, 'un3_cnt_wait_1[15:0]'
+@N: MO231 :"e:\my_work\a3p250\project\rd_flash1\hdl\uart_tx.v":42:0:42:5|Found counter in view:work.uart_tx_9600_10000000_1041(verilog) instance baud_cnt[12:0] 
+@N: FP130 |Promoting Net sys_rst_n_c on CLKBUF  sys_rst_n_pad 
+@N: MT320 |This timing report is an estimate of place and route data. For final timing results, use the FPGA vendor place and route report.
+@N: MT322 |Clock constraints include only register-to-register paths associated with each individual clock.

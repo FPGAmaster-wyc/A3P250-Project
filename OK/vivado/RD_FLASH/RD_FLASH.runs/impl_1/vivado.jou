@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Wed Aug 21 11:08:50 2024
+# Process ID: 17844
+# Current directory: E:/my_work/A3P250/vivado/RD_FLASH/RD_FLASH.runs/impl_1
+# Command line: vivado.exe -log spi_flash_read.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source spi_flash_read.tcl -notrace
+# Log file: E:/my_work/A3P250/vivado/RD_FLASH/RD_FLASH.runs/impl_1/spi_flash_read.vdi
+# Journal file: E:/my_work/A3P250/vivado/RD_FLASH/RD_FLASH.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source spi_flash_read.tcl -notrace

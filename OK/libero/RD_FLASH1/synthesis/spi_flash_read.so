@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<SynplifyOutput>
+	<result>Success</result>
+	<design>spi_flash_read</design>
+	<target_edif>E:\my_work\A3P250\project\RD_FLASH1\synthesis\spi_flash_read.edn</target_edif>
+</SynplifyOutput>

@@ -1,0 +1,13 @@
+C:\Microsemi\Libero_SoC_v11.8\SynplifyPro\bin64\c_hdl.exe  -osyn  E:\my_work\A3P250\project\RD_FLASH1\synthesis\synwork\spi_flash_read_comp.srs  -top  spi_flash_read  -hdllog  E:\my_work\A3P250\project\RD_FLASH1\synthesis\synlog\spi_flash_read_compiler.srr  -encrypt  -mp  4  -verification_mode 0  -verilog  -prodtype  synplify_pro  -nram -fixsmult -divnmod   -I E:\my_work\A3P250\project\RD_FLASH1\synthesis\  -I C:\Microsemi\Libero_SoC_v11.8\SynplifyPro\lib   -v2001  -devicelib  C:\Microsemi\Libero_SoC_v11.8\SynplifyPro\lib\proasic\proasic3.v  -encrypt  -pro  -dmgen  E:\my_work\A3P250\project\RD_FLASH1\synthesis\dm  -ui -fid2 -ram -sharing on -ll 2000 -autosm  -lib work E:\my_work\A3P250\project\RD_FLASH1\smartgen\get_clk\get_clk.v -lib work E:\my_work\A3P250\project\RD_FLASH1\hdl\uart_tx.v -lib work E:\my_work\A3P250\project\RD_FLASH1\hdl\key_filter.v -lib work E:\my_work\A3P250\project\RD_FLASH1\smartgen\fifo8b2048\fifo8b2048.v -lib work E:\my_work\A3P250\project\RD_FLASH1\hdl\flash_read_ctrl.v -lib work E:\my_work\A3P250\project\RD_FLASH1\hdl\spi_flash_read.v 
+rc:0 success:1 runtime:1
+file:E:\my_work\A3P250\project\RD_FLASH1\synthesis\synwork\spi_flash_read_comp.srs|io:o|time:1724230540|size:30255|exec:0
+file:E:\my_work\A3P250\project\RD_FLASH1\synthesis\synlog\spi_flash_read_compiler.srr|io:o|time:1724230540|size:37652|exec:0
+file:C:\Microsemi\Libero_SoC_v11.8\SynplifyPro\lib\proasic\proasic3.v|io:i|time:1487916450|size:49355|exec:0
+file:E:\my_work\A3P250\project\RD_FLASH1\smartgen\get_clk\get_clk.v|io:i|time:1724229867|size:2664|exec:0
+file:E:\my_work\A3P250\project\RD_FLASH1\hdl\uart_tx.v|io:i|time:1724230507|size:3214|exec:0
+file:E:\my_work\A3P250\project\RD_FLASH1\hdl\key_filter.v|io:i|time:1724230514|size:1624|exec:0
+file:E:\my_work\A3P250\project\RD_FLASH1\smartgen\fifo8b2048\fifo8b2048.v|io:i|time:1724230062|size:45996|exec:0
+file:E:\my_work\A3P250\project\RD_FLASH1\hdl\flash_read_ctrl.v|io:i|time:1724230527|size:8759|exec:0
+file:E:\my_work\A3P250\project\RD_FLASH1\hdl\spi_flash_read.v|io:i|time:1724230483|size:3357|exec:0
+file:C:\Microsemi\Libero_SoC_v11.8\SynplifyPro\bin\c_hdl.exe|io:i|time:1479348364|size:1337856|exec:1
+file:C:\Microsemi\Libero_SoC_v11.8\SynplifyPro\bin64\c_hdl.exe|io:i|time:1479348568|size:1973248|exec:1

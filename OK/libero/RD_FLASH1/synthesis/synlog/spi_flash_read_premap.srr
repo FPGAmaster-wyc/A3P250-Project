@@ -1,0 +1,60 @@
+# Wed Aug 21 16:55:41 2024
+
+Synopsys Microsemi Technology Pre-mapping, Version mapact, Build 1920R, Built Nov 17 2016 09:40:34
+Copyright (C) 1994-2016 Synopsys, Inc. All rights reserved. This Synopsys software and all associated documentation are proprietary to Synopsys, Inc. and may only be used pursuant to the terms and conditions of a written license agreement with Synopsys, Inc. All other use, reproduction, modification, or distribution of the Synopsys software or the associated documentation is strictly prohibited.
+Product Version L-2016.09M-2
+
+Mapper Startup Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 99MB peak: 99MB)
+
+@A: MF827 |No constraint file specified.
+@L: E:\my_work\A3P250\project\RD_FLASH1\synthesis\spi_flash_read_scck.rpt 
+Printing clock  summary report in "E:\my_work\A3P250\project\RD_FLASH1\synthesis\spi_flash_read_scck.rpt" file 
+@N: MF248 |Running in 64-bit mode.
+@N: MF667 |Clock conversion disabled. (Command "set_option -fix_gated_and_generated_clocks 0" in the project file.)
+
+Design Input Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 101MB peak: 103MB)
+
+
+Mapper Initialization Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 101MB peak: 103MB)
+
+@N: MO111 :"e:\my_work\a3p250\project\rd_flash1\hdl\spi_flash_read.v":21:20:21:23|Tristate driver tx_d (in view: work.spi_flash_read(verilog)) on net tx_d (in view: work.spi_flash_read(verilog)) has its enable tied to GND.
+
+Finished netlist restructuring (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 108MB peak: 109MB)
+
+
+
+Clock Summary
+*****************
+
+Start                          Requested     Requested     Clock        Clock                   Clock
+Clock                          Frequency     Period        Type         Group                   Load 
+-----------------------------------------------------------------------------------------------------
+get_clk|GLA_inferred_clock     100.0 MHz     10.000        inferred     Inferred_clkgroup_0     171  
+=====================================================================================================
+
+@W: MT530 :"e:\my_work\a3p250\project\rd_flash1\hdl\key_filter.v":27:0:27:5|Found inferred clock get_clk|GLA_inferred_clock which controls 171 sequential elements including key_filter_inst.cnt_20ms[19:0]. This clock has no specified timing constraint which may adversely impact design performance. 
+
+Finished Pre Mapping Phase.
+@N: MO111 :"e:\my_work\a3p250\project\rd_flash1\hdl\spi_flash_read.v":21:20:21:23|Tristate driver tx_d (in view: work.spi_flash_read(verilog)) on net tx_d (in view: work.spi_flash_read(verilog)) has its enable tied to GND.
+@N: BN225 |Writing default property annotation file E:\my_work\A3P250\project\RD_FLASH1\synthesis\spi_flash_read.sap.
+
+Starting constraint checker (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 108MB peak: 109MB)
+
+Encoding state machine state[2:0] (in view: work.flash_read_ctrl_1_2_4_3_100_0_0_0_20000(verilog))
+original code -> new code
+   001 -> 00
+   010 -> 01
+   100 -> 10
+None
+None
+
+Finished constraint checker (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 108MB peak: 109MB)
+
+Pre-mapping successful!
+
+At Mapper Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 24MB peak: 109MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+# Wed Aug 21 16:55:42 2024
+
+###########################################################]

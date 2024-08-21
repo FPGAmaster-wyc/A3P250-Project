@@ -1,0 +1,35 @@
+Software Version: 11.8.0.26
+creating folder: E:\my_work\A3P250\project\RD_FLASH1\designer\impl1\spi_flash_read_fp
+Embedded FlashPro5 programmer detected.
+programmer 'E2008L6ORI' : FlashPro5
+Created new project
+'E:/my_work/A3P250/project/RD_FLASH1/designer/impl1/spi_flash_read_fp\spi_flash_read.pro'
+The 'new_project' command succeeded.
+PDB file 'E:/my_work/A3P250/project/RD_FLASH1/designer/impl1/spi_flash_read.pdb' has been loaded
+successfully.
+DESIGN : spi_flash_read;  CHECKSUM : EAD5;  PDB_VERSION : 1.9
+The 'set_programming_file' command succeeded.
+The 'set_programming_action' command succeeded.
+programmer 'E2008L6ORI' : Scan Chain...
+Warning: programmer 'E2008L6ORI' : Vpump has been selected on programmer AND an externally
+         provided Vpump has also been detected. Using externally provided Vpump voltage source.
+programmer 'E2008L6ORI' : Scan Chain PASSED.
+programmer 'E2008L6ORI' : Executing action PROGRAM
+programmer 'E2008L6ORI' : EXPORT FSN[48] = 01511c187469
+programmer 'E2008L6ORI' : Erase ...
+programmer 'E2008L6ORI' : Completed erase
+programmer 'E2008L6ORI' : EXPORT CHECKSUM[16] = ead5
+programmer 'E2008L6ORI' : Programming FPGA Array
+programmer 'E2008L6ORI' : Verifying FPGA Array
+programmer 'E2008L6ORI' :         Verifying FPGA Array -- pass
+programmer 'E2008L6ORI' : Finished: Wed Aug 21 17:02:36 2024 (Elapsed time 00:01:06)
+programmer 'E2008L6ORI' : Executing action PROGRAM PASSED.
+
+                        o - o - o - o - o - o
+
+The 'run_selected_actions' command succeeded.
+creating folder:
+E:\my_work\A3P250\project\RD_FLASH1\designer\impl1\spi_flash_read_fp\projectData
+Project saved.
+The 'save_project' command succeeded.
+Project closed.

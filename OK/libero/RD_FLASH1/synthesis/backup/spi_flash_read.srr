@@ -1,0 +1,479 @@
+#Build: Synplify Pro L-2016.09M-2, Build 065R, Nov 16 2016
+#install: C:\Microsemi\Libero_SoC_v11.8\SynplifyPro
+#OS: Windows 8 6.2
+#Hostname: DESKTOP-I9U844P
+
+# Wed Aug 21 16:31:11 2024
+
+#Implementation: synthesis
+
+Synopsys HDL Compiler, version comp2016q3p1, Build 117R, built Nov 17 2016
+@N|Running in 64-bit mode
+Copyright (C) 1994-2016 Synopsys, Inc. All rights reserved. This Synopsys software and all associated documentation are proprietary to Synopsys, Inc. and may only be used pursuant to the terms and conditions of a written license agreement with Synopsys, Inc. All other use, reproduction, modification, or distribution of the Synopsys software or the associated documentation is strictly prohibited.
+
+Synopsys Verilog Compiler, version comp2016q3p1, Build 127R, built Nov 24 2016
+@N|Running in 64-bit mode
+Copyright (C) 1994-2016 Synopsys, Inc. All rights reserved. This Synopsys software and all associated documentation are proprietary to Synopsys, Inc. and may only be used pursuant to the terms and conditions of a written license agreement with Synopsys, Inc. All other use, reproduction, modification, or distribution of the Synopsys software or the associated documentation is strictly prohibited.
+
+@I::"C:\Microsemi\Libero_SoC_v11.8\SynplifyPro\lib\proasic\proasic3.v" (library work)
+@I::"C:\Microsemi\Libero_SoC_v11.8\SynplifyPro\lib\vlog\hypermods.v" (library __hyper__lib__)
+@I::"C:\Microsemi\Libero_SoC_v11.8\SynplifyPro\lib\vlog\umr_capim.v" (library snps_haps)
+@I::"C:\Microsemi\Libero_SoC_v11.8\SynplifyPro\lib\vlog\scemi_objects.v" (library snps_haps)
+@I::"C:\Microsemi\Libero_SoC_v11.8\SynplifyPro\lib\vlog\scemi_pipes.svh" (library snps_haps)
+@I::"E:\my_work\A3P250\project\RD_FLASH1\hdl\key_filter.v" (library work)
+@I::"E:\my_work\A3P250\project\RD_FLASH1\hdl\uart_tx.v" (library work)
+@I::"E:\my_work\A3P250\project\RD_FLASH1\hdl\flash_read_ctrl.v" (library work)
+@I::"E:\my_work\A3P250\project\RD_FLASH1\hdl\spi_flash_read.v" (library work)
+Verilog syntax check successful!
+Selecting top level module spi_flash_read
+@N: CG364 :"E:\my_work\A3P250\project\RD_FLASH1\hdl\key_filter.v":3:8:3:17|Synthesizing module key_filter in library work.
+
+	CNT_MAX=20'b11110100001000111111
+   Generated name = key_filter_999999
+
+@N: CG179 :"E:\my_work\A3P250\project\RD_FLASH1\hdl\key_filter.v":33:20:33:27|Removing redundant assignment.
+@N: CG364 :"E:\my_work\A3P250\project\RD_FLASH1\hdl\flash_read_ctrl.v":4:8:4:22|Synthesizing module flash_read_ctrl in library work.
+
+	IDLE=3'b001
+	READ=3'b010
+	SEND=3'b100
+	READ_INST=8'b00000011
+	NUM_DATA=16'b0000000001100100
+	SECTOR_ADDR=8'b00000000
+	PAGE_ADDR=8'b00000000
+	BYTE_ADDR=8'b00000000
+	CNT_WAIT_MAX=16'b0100111000100000
+   Generated name = flash_read_ctrl_1_2_4_3_100_0_0_0_20000
+
+@N: CG179 :"E:\my_work\A3P250\project\RD_FLASH1\hdl\flash_read_ctrl.v":176:20:176:26|Removing redundant assignment.
+@W: CG360 :"E:\my_work\A3P250\project\RD_FLASH1\hdl\flash_read_ctrl.v":16:28:16:34|Removing wire tx_data, as there is no assignment to it.
+@W: CL169 :"E:\my_work\A3P250\project\RD_FLASH1\hdl\flash_read_ctrl.v":170:0:170:5|Pruning unused register po_data[7:0]. Make sure that there are no unused intermediate registers.
+@W: CL169 :"E:\my_work\A3P250\project\RD_FLASH1\hdl\flash_read_ctrl.v":147:0:147:5|Pruning unused register data[7:0]. Make sure that there are no unused intermediate registers.
+@N: CG364 :"E:\my_work\A3P250\project\RD_FLASH1\hdl\uart_tx.v":3:8:3:14|Synthesizing module uart_tx in library work.
+
+	UART_BPS=14'b10010110000000
+	CLK_FREQ=26'b00100110001001011010000000
+	BAUD_CNT_MAX=26'b00000000000000010000010001
+   Generated name = uart_tx_9600_10000000_1041
+
+@N: CG364 :"E:\my_work\A3P250\project\RD_FLASH1\hdl\spi_flash_read.v":5:8:5:21|Synthesizing module spi_flash_read in library work.
+
+@W: CG360 :"E:\my_work\A3P250\project\RD_FLASH1\hdl\spi_flash_read.v":21:20:21:23|Removing wire tx_d, as there is no assignment to it.
+@W: CG360 :"E:\my_work\A3P250\project\RD_FLASH1\hdl\spi_flash_read.v":40:16:40:22|Removing wire clk_10M, as there is no assignment to it.
+@W: CG360 :"E:\my_work\A3P250\project\RD_FLASH1\hdl\spi_flash_read.v":41:16:41:22|Removing wire ila_clk, as there is no assignment to it.
+@W: CG360 :"E:\my_work\A3P250\project\RD_FLASH1\hdl\spi_flash_read.v":42:16:42:24|Removing wire sys_rst_n, as there is no assignment to it.
+@W: CL156 :"E:\my_work\A3P250\project\RD_FLASH1\hdl\spi_flash_read.v":59:17:59:23|*Input clk_50M to expression [instance] has undriven bits; assigning undriven bits to 0.  Simulation mismatch possible. Assign all bits of the input.
+@W: CL156 :"E:\my_work\A3P250\project\RD_FLASH1\hdl\spi_flash_read.v":42:16:42:24|*Input sys_rst_n to expression [instance] has undriven bits; assigning undriven bits to 0.  Simulation mismatch possible. Assign all bits of the input.
+@W: CL156 :"E:\my_work\A3P250\project\RD_FLASH1\hdl\spi_flash_read.v":59:17:59:23|*Input clk_50M to expression [instance] has undriven bits; assigning undriven bits to 0.  Simulation mismatch possible. Assign all bits of the input.
+@W: CL156 :"E:\my_work\A3P250\project\RD_FLASH1\hdl\spi_flash_read.v":41:16:41:22|*Input ila_clk to expression [instance] has undriven bits; assigning undriven bits to 0.  Simulation mismatch possible. Assign all bits of the input.
+@W: CL156 :"E:\my_work\A3P250\project\RD_FLASH1\hdl\spi_flash_read.v":42:16:42:24|*Input sys_rst_n to expression [instance] has undriven bits; assigning undriven bits to 0.  Simulation mismatch possible. Assign all bits of the input.
+@W: CL156 :"E:\my_work\A3P250\project\RD_FLASH1\hdl\spi_flash_read.v":59:17:59:23|*Input clk_50M to expression [instance] has undriven bits; assigning undriven bits to 0.  Simulation mismatch possible. Assign all bits of the input.
+@W: CL156 :"E:\my_work\A3P250\project\RD_FLASH1\hdl\spi_flash_read.v":42:16:42:24|*Input sys_rst_n to expression [instance] has undriven bits; assigning undriven bits to 0.  Simulation mismatch possible. Assign all bits of the input.
+@W: CL157 :"E:\my_work\A3P250\project\RD_FLASH1\hdl\spi_flash_read.v":21:20:21:23|*Output tx_d has undriven bits; assigning undriven bits to 0.  Simulation mismatch possible. Assign all bits of the output.
+@N: CL159 :"E:\my_work\A3P250\project\RD_FLASH1\hdl\spi_flash_read.v":7:20:7:26|Input sys_clk is unused.
+@N: CL159 :"E:\my_work\A3P250\project\RD_FLASH1\hdl\spi_flash_read.v":8:20:8:26|Input sys_rst is unused.
+@W: CL190 :"E:\my_work\A3P250\project\RD_FLASH1\hdl\flash_read_ctrl.v":210:0:210:5|Optimizing register bit read_data_num[7] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL260 :"E:\my_work\A3P250\project\RD_FLASH1\hdl\flash_read_ctrl.v":210:0:210:5|Pruning register bit 7 of read_data_num[7:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.
+@N: CL201 :"E:\my_work\A3P250\project\RD_FLASH1\hdl\flash_read_ctrl.v":107:0:107:5|Trying to extract state machine for register state.
+Extracted state machine for register state
+State machine has 3 reachable states with original encodings of:
+   001
+   010
+   100
+@W: CL157 :"E:\my_work\A3P250\project\RD_FLASH1\hdl\flash_read_ctrl.v":16:28:16:34|*Output tx_data has undriven bits; assigning undriven bits to 0.  Simulation mismatch possible. Assign all bits of the output.
+@N: CL159 :"E:\my_work\A3P250\project\RD_FLASH1\hdl\flash_read_ctrl.v":7:28:7:34|Input ila_clk is unused.
+@N: CL159 :"E:\my_work\A3P250\project\RD_FLASH1\hdl\flash_read_ctrl.v":10:28:10:31|Input miso is unused.
+
+At c_ver Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 72MB peak: 74MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+
+Process completed successfully.
+# Wed Aug 21 16:31:11 2024
+
+###########################################################]
+Synopsys Netlist Linker, version comp2016q3p1, Build 117R, built Nov 17 2016
+@N|Running in 64-bit mode
+
+At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 67MB peak: 68MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+
+Process completed successfully.
+# Wed Aug 21 16:31:11 2024
+
+###########################################################]
+@END
+
+At c_hdl Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 3MB peak: 4MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+
+Process completed successfully.
+# Wed Aug 21 16:31:11 2024
+
+###########################################################]
+Synopsys Netlist Linker, version comp2016q3p1, Build 117R, built Nov 17 2016
+@N|Running in 64-bit mode
+
+At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 67MB peak: 68MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+
+Process completed successfully.
+# Wed Aug 21 16:31:12 2024
+
+###########################################################]
+Pre-mapping Report
+
+# Wed Aug 21 16:31:12 2024
+
+Synopsys Microsemi Technology Pre-mapping, Version mapact, Build 1920R, Built Nov 17 2016 09:40:34
+Copyright (C) 1994-2016 Synopsys, Inc. All rights reserved. This Synopsys software and all associated documentation are proprietary to Synopsys, Inc. and may only be used pursuant to the terms and conditions of a written license agreement with Synopsys, Inc. All other use, reproduction, modification, or distribution of the Synopsys software or the associated documentation is strictly prohibited.
+Product Version L-2016.09M-2
+
+Mapper Startup Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 99MB peak: 99MB)
+
+@A: MF827 |No constraint file specified.
+@L: E:\my_work\A3P250\project\RD_FLASH1\synthesis\spi_flash_read_scck.rpt 
+Printing clock  summary report in "E:\my_work\A3P250\project\RD_FLASH1\synthesis\spi_flash_read_scck.rpt" file 
+@N: MF248 |Running in 64-bit mode.
+@N: MF667 |Clock conversion disabled. (Command "set_option -fix_gated_and_generated_clocks 0" in the project file.)
+
+Design Input Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 100MB peak: 102MB)
+
+
+Mapper Initialization Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 100MB peak: 102MB)
+
+@N: MO111 :"e:\my_work\a3p250\project\rd_flash1\hdl\flash_read_ctrl.v":16:28:16:34|Tristate driver tx_data_1 (in view: work.flash_read_ctrl_1_2_4_3_100_0_0_0_20000(verilog)) on net tx_data_1 (in view: work.flash_read_ctrl_1_2_4_3_100_0_0_0_20000(verilog)) has its enable tied to GND.
+@N: MO111 :"e:\my_work\a3p250\project\rd_flash1\hdl\flash_read_ctrl.v":16:28:16:34|Tristate driver tx_data_2 (in view: work.flash_read_ctrl_1_2_4_3_100_0_0_0_20000(verilog)) on net tx_data_2 (in view: work.flash_read_ctrl_1_2_4_3_100_0_0_0_20000(verilog)) has its enable tied to GND.
+@N: MO111 :"e:\my_work\a3p250\project\rd_flash1\hdl\flash_read_ctrl.v":16:28:16:34|Tristate driver tx_data_3 (in view: work.flash_read_ctrl_1_2_4_3_100_0_0_0_20000(verilog)) on net tx_data_3 (in view: work.flash_read_ctrl_1_2_4_3_100_0_0_0_20000(verilog)) has its enable tied to GND.
+@N: MO111 :"e:\my_work\a3p250\project\rd_flash1\hdl\flash_read_ctrl.v":16:28:16:34|Tristate driver tx_data_4 (in view: work.flash_read_ctrl_1_2_4_3_100_0_0_0_20000(verilog)) on net tx_data_4 (in view: work.flash_read_ctrl_1_2_4_3_100_0_0_0_20000(verilog)) has its enable tied to GND.
+@N: MO111 :"e:\my_work\a3p250\project\rd_flash1\hdl\flash_read_ctrl.v":16:28:16:34|Tristate driver tx_data_5 (in view: work.flash_read_ctrl_1_2_4_3_100_0_0_0_20000(verilog)) on net tx_data_5 (in view: work.flash_read_ctrl_1_2_4_3_100_0_0_0_20000(verilog)) has its enable tied to GND.
+@N: MO111 :"e:\my_work\a3p250\project\rd_flash1\hdl\flash_read_ctrl.v":16:28:16:34|Tristate driver tx_data_6 (in view: work.flash_read_ctrl_1_2_4_3_100_0_0_0_20000(verilog)) on net tx_data_6 (in view: work.flash_read_ctrl_1_2_4_3_100_0_0_0_20000(verilog)) has its enable tied to GND.
+@N: MO111 :"e:\my_work\a3p250\project\rd_flash1\hdl\flash_read_ctrl.v":16:28:16:34|Tristate driver tx_data_7 (in view: work.flash_read_ctrl_1_2_4_3_100_0_0_0_20000(verilog)) on net tx_data_7 (in view: work.flash_read_ctrl_1_2_4_3_100_0_0_0_20000(verilog)) has its enable tied to GND.
+@N: MO111 :"e:\my_work\a3p250\project\rd_flash1\hdl\flash_read_ctrl.v":16:28:16:34|Tristate driver tx_data_8 (in view: work.flash_read_ctrl_1_2_4_3_100_0_0_0_20000(verilog)) on net tx_data_8 (in view: work.flash_read_ctrl_1_2_4_3_100_0_0_0_20000(verilog)) has its enable tied to GND.
+@N: MO111 :"e:\my_work\a3p250\project\rd_flash1\hdl\spi_flash_read.v":21:20:21:23|Tristate driver tx_d (in view: work.spi_flash_read(verilog)) on net tx_d (in view: work.spi_flash_read(verilog)) has its enable tied to GND.
+@W: MO129 :"e:\my_work\a3p250\project\rd_flash1\hdl\flash_read_ctrl.v":200:0:200:5|Sequential instance flash_read_ctrl_inst.fifo_read_en is reduced to a combinational gate by constant propagation.
+@W: MO129 :"e:\my_work\a3p250\project\rd_flash1\hdl\flash_read_ctrl.v":138:0:138:5|Sequential instance flash_read_ctrl_inst.miso_flag is reduced to a combinational gate by constant propagation.
+@W: MO129 :"e:\my_work\a3p250\project\rd_flash1\hdl\flash_read_ctrl.v":163:0:163:5|Sequential instance flash_read_ctrl_inst.po_flag is reduced to a combinational gate by constant propagation.
+@W: MO129 :"e:\my_work\a3p250\project\rd_flash1\hdl\flash_read_ctrl.v":154:0:154:5|Sequential instance flash_read_ctrl_inst.po_flag_reg is reduced to a combinational gate by constant propagation.
+@W: MO129 :"e:\my_work\a3p250\project\rd_flash1\hdl\flash_read_ctrl.v":219:0:219:5|Sequential instance flash_read_ctrl_inst.tx_flag is reduced to a combinational gate by constant propagation.
+@W: MO129 :"e:\my_work\a3p250\project\rd_flash1\hdl\key_filter.v":39:0:39:5|Sequential instance key_filter_inst.key_flag is reduced to a combinational gate by constant propagation.
+@W: MO129 :"e:\my_work\a3p250\project\rd_flash1\hdl\uart_tx.v":51:0:51:5|Sequential instance uart_tx_inst.bit_flag is reduced to a combinational gate by constant propagation.
+@N: BN362 :"e:\my_work\a3p250\project\rd_flash1\hdl\uart_tx.v":69:0:69:5|Removing sequential instance tx (in view: work.uart_tx_9600_10000000_1041(verilog)) of type view:PrimLib.dffse(prim) because it does not drive other instances.
+@N: BN115 :"e:\my_work\a3p250\project\rd_flash1\hdl\spi_flash_read.v":57:0:57:14|Removing instance key_filter_inst (in view: work.spi_flash_read(verilog)) of type view:work.key_filter_999999(verilog) because it does not drive other instances.
+@N: BN115 :"e:\my_work\a3p250\project\rd_flash1\hdl\spi_flash_read.v":93:0:93:11|Removing instance uart_tx_inst (in view: work.spi_flash_read(verilog)) of type view:work.uart_tx_9600_10000000_1041(verilog) because it does not drive other instances.
+
+Finished netlist restructuring (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 107MB peak: 109MB)
+
+
+
+Clock Summary
+*****************
+
+Start     Requested     Requested     Clock     Clock     Clock
+Clock     Frequency     Period        Type      Group     Load 
+---------------------------------------------------------------
+===============================================================
+
+Finished Pre Mapping Phase.
+@N: MO111 :"e:\my_work\a3p250\project\rd_flash1\hdl\spi_flash_read.v":21:20:21:23|Tristate driver tx_d (in view: work.spi_flash_read(verilog)) on net tx_d (in view: work.spi_flash_read(verilog)) has its enable tied to GND.
+@N: BN225 |Writing default property annotation file E:\my_work\A3P250\project\RD_FLASH1\synthesis\spi_flash_read.sap.
+
+Starting constraint checker (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 107MB peak: 109MB)
+
+Encoding state machine state[2:0] (in view: work.flash_read_ctrl_1_2_4_3_100_0_0_0_20000(verilog))
+original code -> new code
+   001 -> 00
+   010 -> 01
+   100 -> 10
+None
+None
+
+Finished constraint checker (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 108MB peak: 109MB)
+
+Pre-mapping successful!
+
+At Mapper Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 23MB peak: 109MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+# Wed Aug 21 16:31:12 2024
+
+###########################################################]
+Map & Optimize Report
+
+# Wed Aug 21 16:31:13 2024
+
+Synopsys Microsemi Technology Mapper, Version mapact, Build 1920R, Built Nov 17 2016 09:40:34
+Copyright (C) 1994-2016 Synopsys, Inc. All rights reserved. This Synopsys software and all associated documentation are proprietary to Synopsys, Inc. and may only be used pursuant to the terms and conditions of a written license agreement with Synopsys, Inc. All other use, reproduction, modification, or distribution of the Synopsys software or the associated documentation is strictly prohibited.
+Product Version L-2016.09M-2
+
+Mapper Startup Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 99MB peak: 99MB)
+
+@N: MF248 |Running in 64-bit mode.
+@N: MF667 |Clock conversion disabled. (Command "set_option -fix_gated_and_generated_clocks 0" in the project file.)
+
+Design Input Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 99MB peak: 101MB)
+
+
+Mapper Initialization Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 99MB peak: 101MB)
+
+
+
+Starting Optimization and Mapping (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 107MB peak: 109MB)
+
+@N: MO111 :"e:\my_work\a3p250\project\rd_flash1\hdl\flash_read_ctrl.v":16:28:16:34|Tristate driver tx_data_1 (in view: work.flash_read_ctrl_1_2_4_3_100_0_0_0_20000(verilog)) on net tx_data_1 (in view: work.flash_read_ctrl_1_2_4_3_100_0_0_0_20000(verilog)) has its enable tied to GND.
+@N: MO111 :"e:\my_work\a3p250\project\rd_flash1\hdl\flash_read_ctrl.v":16:28:16:34|Tristate driver tx_data_2 (in view: work.flash_read_ctrl_1_2_4_3_100_0_0_0_20000(verilog)) on net tx_data_2 (in view: work.flash_read_ctrl_1_2_4_3_100_0_0_0_20000(verilog)) has its enable tied to GND.
+@N: MO111 :"e:\my_work\a3p250\project\rd_flash1\hdl\flash_read_ctrl.v":16:28:16:34|Tristate driver tx_data_3 (in view: work.flash_read_ctrl_1_2_4_3_100_0_0_0_20000(verilog)) on net tx_data_3 (in view: work.flash_read_ctrl_1_2_4_3_100_0_0_0_20000(verilog)) has its enable tied to GND.
+@N: MO111 :"e:\my_work\a3p250\project\rd_flash1\hdl\flash_read_ctrl.v":16:28:16:34|Tristate driver tx_data_4 (in view: work.flash_read_ctrl_1_2_4_3_100_0_0_0_20000(verilog)) on net tx_data_4 (in view: work.flash_read_ctrl_1_2_4_3_100_0_0_0_20000(verilog)) has its enable tied to GND.
+@N: MO111 :"e:\my_work\a3p250\project\rd_flash1\hdl\flash_read_ctrl.v":16:28:16:34|Tristate driver tx_data_5 (in view: work.flash_read_ctrl_1_2_4_3_100_0_0_0_20000(verilog)) on net tx_data_5 (in view: work.flash_read_ctrl_1_2_4_3_100_0_0_0_20000(verilog)) has its enable tied to GND.
+@N: MO111 :"e:\my_work\a3p250\project\rd_flash1\hdl\flash_read_ctrl.v":16:28:16:34|Tristate driver tx_data_6 (in view: work.flash_read_ctrl_1_2_4_3_100_0_0_0_20000(verilog)) on net tx_data_6 (in view: work.flash_read_ctrl_1_2_4_3_100_0_0_0_20000(verilog)) has its enable tied to GND.
+@N: MO111 :"e:\my_work\a3p250\project\rd_flash1\hdl\flash_read_ctrl.v":16:28:16:34|Tristate driver tx_data_7 (in view: work.flash_read_ctrl_1_2_4_3_100_0_0_0_20000(verilog)) on net tx_data_7 (in view: work.flash_read_ctrl_1_2_4_3_100_0_0_0_20000(verilog)) has its enable tied to GND.
+@N: MO111 :"e:\my_work\a3p250\project\rd_flash1\hdl\flash_read_ctrl.v":16:28:16:34|Tristate driver tx_data_8 (in view: work.flash_read_ctrl_1_2_4_3_100_0_0_0_20000(verilog)) on net tx_data_8 (in view: work.flash_read_ctrl_1_2_4_3_100_0_0_0_20000(verilog)) has its enable tied to GND.
+@N: MO111 :"e:\my_work\a3p250\project\rd_flash1\hdl\spi_flash_read.v":21:20:21:23|Tristate driver tx_d (in view: work.spi_flash_read(verilog)) on net tx_d (in view: work.spi_flash_read(verilog)) has its enable tied to GND.
+
+Available hyper_sources - for debug and ip models
+	None Found
+
+
+Finished RTL optimizations (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 108MB peak: 109MB)
+
+@N: MO231 :"e:\my_work\a3p250\project\rd_flash1\hdl\flash_read_ctrl.v":100:0:100:5|Found counter in view:work.flash_read_ctrl_1_2_4_3_100_0_0_0_20000(verilog) instance cnt_bit[2:0] 
+@N: MO231 :"e:\my_work\a3p250\project\rd_flash1\hdl\flash_read_ctrl.v":59:0:59:5|Found counter in view:work.flash_read_ctrl_1_2_4_3_100_0_0_0_20000(verilog) instance cnt_clk[4:0] 
+Encoding state machine state[2:0] (in view: work.flash_read_ctrl_1_2_4_3_100_0_0_0_20000(verilog))
+original code -> new code
+   001 -> 00
+   010 -> 01
+   100 -> 10
+@W: MO129 :"e:\my_work\a3p250\project\rd_flash1\hdl\flash_read_ctrl.v":100:0:100:5|Sequential instance flash_read_ctrl_inst.cnt_bit[0] is reduced to a combinational gate by constant propagation.
+@W: MO129 :"e:\my_work\a3p250\project\rd_flash1\hdl\flash_read_ctrl.v":100:0:100:5|Sequential instance flash_read_ctrl_inst.cnt_bit[1] is reduced to a combinational gate by constant propagation.
+@W: MO129 :"e:\my_work\a3p250\project\rd_flash1\hdl\flash_read_ctrl.v":100:0:100:5|Sequential instance flash_read_ctrl_inst.cnt_bit[2] is reduced to a combinational gate by constant propagation.
+@W: MO129 :"e:\my_work\a3p250\project\rd_flash1\hdl\flash_read_ctrl.v":59:0:59:5|Sequential instance flash_read_ctrl_inst.cnt_clk[0] is reduced to a combinational gate by constant propagation.
+@W: MO129 :"e:\my_work\a3p250\project\rd_flash1\hdl\flash_read_ctrl.v":59:0:59:5|Sequential instance flash_read_ctrl_inst.cnt_clk[1] is reduced to a combinational gate by constant propagation.
+@W: MO129 :"e:\my_work\a3p250\project\rd_flash1\hdl\flash_read_ctrl.v":59:0:59:5|Sequential instance flash_read_ctrl_inst.cnt_clk[2] is reduced to a combinational gate by constant propagation.
+@W: MO129 :"e:\my_work\a3p250\project\rd_flash1\hdl\flash_read_ctrl.v":59:0:59:5|Sequential instance flash_read_ctrl_inst.cnt_clk[3] is reduced to a combinational gate by constant propagation.
+@W: MO129 :"e:\my_work\a3p250\project\rd_flash1\hdl\flash_read_ctrl.v":59:0:59:5|Sequential instance flash_read_ctrl_inst.cnt_clk[4] is reduced to a combinational gate by constant propagation.
+@W: MO129 :"e:\my_work\a3p250\project\rd_flash1\hdl\flash_read_ctrl.v":123:0:123:5|Sequential instance flash_read_ctrl_inst.mosi is reduced to a combinational gate by constant propagation.
+@W: MO129 :"e:\my_work\a3p250\project\rd_flash1\hdl\flash_read_ctrl.v":179:0:179:5|Sequential instance flash_read_ctrl_inst.fifo_read_valid is reduced to a combinational gate by constant propagation.
+@W: MO129 :"e:\my_work\a3p250\project\rd_flash1\hdl\flash_read_ctrl.v":91:0:91:5|Sequential instance flash_read_ctrl_inst.sck is reduced to a combinational gate by constant propagation.
+@W: MO129 :"e:\my_work\a3p250\project\rd_flash1\hdl\flash_read_ctrl.v":107:0:107:5|Sequential instance flash_read_ctrl_inst.state[0] is reduced to a combinational gate by constant propagation.
+@W: MO129 :"e:\my_work\a3p250\project\rd_flash1\hdl\flash_read_ctrl.v":107:0:107:5|Sequential instance flash_read_ctrl_inst.state[1] is reduced to a combinational gate by constant propagation.
+@N: MF238 :"e:\my_work\a3p250\project\rd_flash1\hdl\flash_read_ctrl.v":197:24:197:39|Found 16-bit incrementor, 'un3_cnt_wait_1[15:0]'
+@W: MO129 :"e:\my_work\a3p250\project\rd_flash1\hdl\flash_read_ctrl.v":66:0:66:5|Sequential instance flash_read_ctrl_inst.cnt_byte[0] is reduced to a combinational gate by constant propagation.
+@W: MO129 :"e:\my_work\a3p250\project\rd_flash1\hdl\flash_read_ctrl.v":66:0:66:5|Sequential instance flash_read_ctrl_inst.cnt_byte[1] is reduced to a combinational gate by constant propagation.
+@W: MO129 :"e:\my_work\a3p250\project\rd_flash1\hdl\flash_read_ctrl.v":66:0:66:5|Sequential instance flash_read_ctrl_inst.cnt_byte[2] is reduced to a combinational gate by constant propagation.
+@W: MO129 :"e:\my_work\a3p250\project\rd_flash1\hdl\flash_read_ctrl.v":66:0:66:5|Sequential instance flash_read_ctrl_inst.cnt_byte[3] is reduced to a combinational gate by constant propagation.
+@W: MO129 :"e:\my_work\a3p250\project\rd_flash1\hdl\flash_read_ctrl.v":66:0:66:5|Sequential instance flash_read_ctrl_inst.cnt_byte[4] is reduced to a combinational gate by constant propagation.
+@W: MO129 :"e:\my_work\a3p250\project\rd_flash1\hdl\flash_read_ctrl.v":66:0:66:5|Sequential instance flash_read_ctrl_inst.cnt_byte[5] is reduced to a combinational gate by constant propagation.
+@W: MO129 :"e:\my_work\a3p250\project\rd_flash1\hdl\flash_read_ctrl.v":66:0:66:5|Sequential instance flash_read_ctrl_inst.cnt_byte[6] is reduced to a combinational gate by constant propagation.
+@W: MO129 :"e:\my_work\a3p250\project\rd_flash1\hdl\flash_read_ctrl.v":66:0:66:5|Sequential instance flash_read_ctrl_inst.cnt_byte[7] is reduced to a combinational gate by constant propagation.
+@W: MO129 :"e:\my_work\a3p250\project\rd_flash1\hdl\flash_read_ctrl.v":66:0:66:5|Sequential instance flash_read_ctrl_inst.cnt_byte[8] is reduced to a combinational gate by constant propagation.
+@W: MO129 :"e:\my_work\a3p250\project\rd_flash1\hdl\flash_read_ctrl.v":66:0:66:5|Sequential instance flash_read_ctrl_inst.cnt_byte[9] is reduced to a combinational gate by constant propagation.
+@W: MO129 :"e:\my_work\a3p250\project\rd_flash1\hdl\flash_read_ctrl.v":66:0:66:5|Sequential instance flash_read_ctrl_inst.cnt_byte[10] is reduced to a combinational gate by constant propagation.
+@W: MO129 :"e:\my_work\a3p250\project\rd_flash1\hdl\flash_read_ctrl.v":66:0:66:5|Sequential instance flash_read_ctrl_inst.cnt_byte[11] is reduced to a combinational gate by constant propagation.
+@W: MO129 :"e:\my_work\a3p250\project\rd_flash1\hdl\flash_read_ctrl.v":66:0:66:5|Sequential instance flash_read_ctrl_inst.cnt_byte[12] is reduced to a combinational gate by constant propagation.
+@W: MO129 :"e:\my_work\a3p250\project\rd_flash1\hdl\flash_read_ctrl.v":66:0:66:5|Sequential instance flash_read_ctrl_inst.cnt_byte[13] is reduced to a combinational gate by constant propagation.
+@W: MO129 :"e:\my_work\a3p250\project\rd_flash1\hdl\flash_read_ctrl.v":66:0:66:5|Sequential instance flash_read_ctrl_inst.cnt_byte[14] is reduced to a combinational gate by constant propagation.
+@W: MO129 :"e:\my_work\a3p250\project\rd_flash1\hdl\flash_read_ctrl.v":66:0:66:5|Sequential instance flash_read_ctrl_inst.cnt_byte[15] is reduced to a combinational gate by constant propagation.
+@W: MO129 :"e:\my_work\a3p250\project\rd_flash1\hdl\flash_read_ctrl.v":75:0:75:5|Sequential instance flash_read_ctrl_inst.cnt_sck[0] is reduced to a combinational gate by constant propagation.
+@W: MO129 :"e:\my_work\a3p250\project\rd_flash1\hdl\flash_read_ctrl.v":75:0:75:5|Sequential instance flash_read_ctrl_inst.cnt_sck[1] is reduced to a combinational gate by constant propagation.
+@W: MO129 :"e:\my_work\a3p250\project\rd_flash1\hdl\flash_read_ctrl.v":210:0:210:5|Sequential instance flash_read_ctrl_inst.read_data_num[0] is reduced to a combinational gate by constant propagation.
+@W: MO129 :"e:\my_work\a3p250\project\rd_flash1\hdl\flash_read_ctrl.v":210:0:210:5|Sequential instance flash_read_ctrl_inst.read_data_num[1] is reduced to a combinational gate by constant propagation.
+@W: MO129 :"e:\my_work\a3p250\project\rd_flash1\hdl\flash_read_ctrl.v":210:0:210:5|Sequential instance flash_read_ctrl_inst.read_data_num[2] is reduced to a combinational gate by constant propagation.
+@W: MO129 :"e:\my_work\a3p250\project\rd_flash1\hdl\flash_read_ctrl.v":210:0:210:5|Sequential instance flash_read_ctrl_inst.read_data_num[3] is reduced to a combinational gate by constant propagation.
+@W: MO129 :"e:\my_work\a3p250\project\rd_flash1\hdl\flash_read_ctrl.v":210:0:210:5|Sequential instance flash_read_ctrl_inst.read_data_num[4] is reduced to a combinational gate by constant propagation.
+@W: MO129 :"e:\my_work\a3p250\project\rd_flash1\hdl\flash_read_ctrl.v":210:0:210:5|Sequential instance flash_read_ctrl_inst.read_data_num[5] is reduced to a combinational gate by constant propagation.
+@W: MO129 :"e:\my_work\a3p250\project\rd_flash1\hdl\flash_read_ctrl.v":210:0:210:5|Sequential instance flash_read_ctrl_inst.read_data_num[6] is reduced to a combinational gate by constant propagation.
+@W: MO129 :"e:\my_work\a3p250\project\rd_flash1\hdl\flash_read_ctrl.v":225:0:225:5|Sequential instance flash_read_ctrl_inst.fifo_data_num[0] is reduced to a combinational gate by constant propagation.
+@W: MO129 :"e:\my_work\a3p250\project\rd_flash1\hdl\flash_read_ctrl.v":225:0:225:5|Sequential instance flash_read_ctrl_inst.fifo_data_num[1] is reduced to a combinational gate by constant propagation.
+@W: MO129 :"e:\my_work\a3p250\project\rd_flash1\hdl\flash_read_ctrl.v":225:0:225:5|Sequential instance flash_read_ctrl_inst.fifo_data_num[2] is reduced to a combinational gate by constant propagation.
+@W: MO129 :"e:\my_work\a3p250\project\rd_flash1\hdl\flash_read_ctrl.v":225:0:225:5|Sequential instance flash_read_ctrl_inst.fifo_data_num[3] is reduced to a combinational gate by constant propagation.
+@W: MO129 :"e:\my_work\a3p250\project\rd_flash1\hdl\flash_read_ctrl.v":225:0:225:5|Sequential instance flash_read_ctrl_inst.fifo_data_num[4] is reduced to a combinational gate by constant propagation.
+@W: MO129 :"e:\my_work\a3p250\project\rd_flash1\hdl\flash_read_ctrl.v":225:0:225:5|Sequential instance flash_read_ctrl_inst.fifo_data_num[5] is reduced to a combinational gate by constant propagation.
+@W: MO129 :"e:\my_work\a3p250\project\rd_flash1\hdl\flash_read_ctrl.v":225:0:225:5|Sequential instance flash_read_ctrl_inst.fifo_data_num[6] is reduced to a combinational gate by constant propagation.
+@W: MO129 :"e:\my_work\a3p250\project\rd_flash1\hdl\flash_read_ctrl.v":225:0:225:5|Sequential instance flash_read_ctrl_inst.fifo_data_num[7] is reduced to a combinational gate by constant propagation.
+@W: MO129 :"e:\my_work\a3p250\project\rd_flash1\hdl\flash_read_ctrl.v":189:0:189:5|Sequential instance flash_read_ctrl_inst.cnt_wait[0] is reduced to a combinational gate by constant propagation.
+@W: MO129 :"e:\my_work\a3p250\project\rd_flash1\hdl\flash_read_ctrl.v":189:0:189:5|Sequential instance flash_read_ctrl_inst.cnt_wait[1] is reduced to a combinational gate by constant propagation.
+@W: MO129 :"e:\my_work\a3p250\project\rd_flash1\hdl\flash_read_ctrl.v":189:0:189:5|Sequential instance flash_read_ctrl_inst.cnt_wait[2] is reduced to a combinational gate by constant propagation.
+@W: MO129 :"e:\my_work\a3p250\project\rd_flash1\hdl\flash_read_ctrl.v":189:0:189:5|Sequential instance flash_read_ctrl_inst.cnt_wait[3] is reduced to a combinational gate by constant propagation.
+@W: MO129 :"e:\my_work\a3p250\project\rd_flash1\hdl\flash_read_ctrl.v":189:0:189:5|Sequential instance flash_read_ctrl_inst.cnt_wait[4] is reduced to a combinational gate by constant propagation.
+@W: MO129 :"e:\my_work\a3p250\project\rd_flash1\hdl\flash_read_ctrl.v":189:0:189:5|Sequential instance flash_read_ctrl_inst.cnt_wait[5] is reduced to a combinational gate by constant propagation.
+@W: MO129 :"e:\my_work\a3p250\project\rd_flash1\hdl\flash_read_ctrl.v":189:0:189:5|Sequential instance flash_read_ctrl_inst.cnt_wait[6] is reduced to a combinational gate by constant propagation.
+@W: MO129 :"e:\my_work\a3p250\project\rd_flash1\hdl\flash_read_ctrl.v":189:0:189:5|Sequential instance flash_read_ctrl_inst.cnt_wait[7] is reduced to a combinational gate by constant propagation.
+@W: MO129 :"e:\my_work\a3p250\project\rd_flash1\hdl\flash_read_ctrl.v":189:0:189:5|Sequential instance flash_read_ctrl_inst.cnt_wait[8] is reduced to a combinational gate by constant propagation.
+@W: MO129 :"e:\my_work\a3p250\project\rd_flash1\hdl\flash_read_ctrl.v":189:0:189:5|Sequential instance flash_read_ctrl_inst.cnt_wait[9] is reduced to a combinational gate by constant propagation.
+@W: MO129 :"e:\my_work\a3p250\project\rd_flash1\hdl\flash_read_ctrl.v":189:0:189:5|Sequential instance flash_read_ctrl_inst.cnt_wait[10] is reduced to a combinational gate by constant propagation.
+@W: MO129 :"e:\my_work\a3p250\project\rd_flash1\hdl\flash_read_ctrl.v":189:0:189:5|Sequential instance flash_read_ctrl_inst.cnt_wait[11] is reduced to a combinational gate by constant propagation.
+@W: MO129 :"e:\my_work\a3p250\project\rd_flash1\hdl\flash_read_ctrl.v":189:0:189:5|Sequential instance flash_read_ctrl_inst.cnt_wait[12] is reduced to a combinational gate by constant propagation.
+@W: MO129 :"e:\my_work\a3p250\project\rd_flash1\hdl\flash_read_ctrl.v":189:0:189:5|Sequential instance flash_read_ctrl_inst.cnt_wait[13] is reduced to a combinational gate by constant propagation.
+@W: MO129 :"e:\my_work\a3p250\project\rd_flash1\hdl\flash_read_ctrl.v":189:0:189:5|Sequential instance flash_read_ctrl_inst.cnt_wait[14] is reduced to a combinational gate by constant propagation.
+@W: MO129 :"e:\my_work\a3p250\project\rd_flash1\hdl\flash_read_ctrl.v":189:0:189:5|Sequential instance flash_read_ctrl_inst.cnt_wait[15] is reduced to a combinational gate by constant propagation.
+@N: BN115 :"e:\my_work\a3p250\project\rd_flash1\hdl\flash_read_ctrl.v":197:24:197:39|Removing instance un3_cnt_wait_1 (in view: work.flash_read_ctrl_1_2_4_3_100_0_0_0_20000(verilog)) of type view:VhdlGenLib.INC___w16(finc) because it does not drive other instances.
+
+Starting factoring (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 108MB peak: 109MB)
+
+
+Finished factoring (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 108MB peak: 109MB)
+
+@N: BN115 :"e:\my_work\a3p250\project\rd_flash1\hdl\spi_flash_read.v":71:0:71:19|Removing instance flash_read_ctrl_inst (in view: work.spi_flash_read(verilog)) of type view:work.flash_read_ctrl_1_2_4_3_100_0_0_0_20000(verilog) because it does not drive other instances.
+
+Finished gated-clock and generated-clock conversion (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 108MB peak: 109MB)
+
+
+Finished generic timing optimizations - Pass 1 (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 108MB peak: 109MB)
+
+
+Starting Early Timing Optimization (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 108MB peak: 109MB)
+
+
+Finished Early Timing Optimization (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 108MB peak: 109MB)
+
+
+Finished generic timing optimizations - Pass 2 (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 108MB peak: 109MB)
+
+
+Finished preparing to map (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 108MB peak: 109MB)
+
+
+Finished technology mapping (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 108MB peak: 109MB)
+
+
+Finished technology timing optimizations and critical path resynthesis (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 108MB peak: 109MB)
+
+
+Added 0 Buffers
+Added 0 Cells via replication
+	Added 0 Sequential Cells via replication
+	Added 0 Combinational Cells via replication
+
+Finished restoring hierarchy (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 108MB peak: 109MB)
+
+
+
+@S |Clock Optimization Summary
+
+
+#### START OF CLOCK OPTIMIZATION REPORT #####[
+
+Clock optimization not enabled
+0 non-gated/non-generated clock tree(s) driving 0 clock pin(s) of sequential element(s)
+0 gated/generated clock tree(s) driving 0 clock pin(s) of sequential element(s)
+0 instances converted, 0 sequential instances remain driven by gated/generated clocks
+
+
+
+##### END OF CLOCK OPTIMIZATION REPORT ######]
+
+
+Start Writing Netlists (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 108MB peak: 109MB)
+
+Writing Analyst data base E:\my_work\A3P250\project\RD_FLASH1\synthesis\synwork\spi_flash_read_m.srm
+
+Finished Writing Netlist Databases (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 108MB peak: 109MB)
+
+Writing EDIF Netlist and constraint files
+L-2016.09M-2
+
+Finished Writing EDIF Netlist and constraint files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 108MB peak: 109MB)
+
+
+Start final timing analysis (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 108MB peak: 109MB)
+
+
+
+##### START OF TIMING REPORT #####[
+# Timing Report written on Wed Aug 21 16:31:13 2024
+#
+
+
+Top view:               spi_flash_read
+Library name:           PA3
+Operating conditions:   COMWC-1 ( T = 70.0, V = 1.42, P = 1.48, tree_type = balanced_tree )
+Requested Frequency:    100.0 MHz
+Wire load mode:         top
+Wire load model:        proasic3
+Paths requested:        5
+Constraint File(s):    
+@N: MT320 |This timing report is an estimate of place and route data. For final timing results, use the FPGA vendor place and route report.
+
+@N: MT322 |Clock constraints include only register-to-register paths associated with each individual clock.
+
+
+
+Performance Summary
+*******************
+
+
+Worst slack in design: NA
+
+
+
+
+
+
+Clock Relationships
+*******************
+
+Clocks            |    rise  to  rise   |    fall  to  fall   |    rise  to  fall   |    fall  to  rise 
+--------------------------------------------------------------------------------------------------------
+Starting  Ending  |  constraint  slack  |  constraint  slack  |  constraint  slack  |  constraint  slack
+--------------------------------------------------------------------------------------------------------
+========================================================================================================
+ Note: 'No paths' indicates there are no paths in the design for that pair of clock edges.
+       'Diff grp' indicates that paths exist but the starting clock and ending clock are in different clock groups.
+
+
+
+Interface Information 
+*********************
+
+No IO constraint found
+
+
+##### END OF TIMING REPORT #####]
+
+Timing exceptions that could not be applied
+None
+
+Finished final timing analysis (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 108MB peak: 109MB)
+
+
+Finished timing report (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 108MB peak: 109MB)
+
+--------------------------------------------------------------------------------
+Target Part: A3P250_VQFP100_-1
+Report for cell spi_flash_read.verilog
+  Core Cell usage:
+              cell count     area count*area
+               GND     1      0.0        0.0
+               VCC     1      0.0        0.0
+
+
+                   -----          ----------
+             TOTAL     2                 0.0
+
+
+  IO Cell usage:
+              cell count
+             INBUF     1
+            OUTBUF     8
+           TRIBUFF     1
+                   -----
+             TOTAL    10
+
+
+Core Cells         : 0 of 6144 (0%)
+IO Cells           : 10
+
+  RAM/ROM Usage Summary
+Block Rams : 0 of 8 (0%)
+
+Mapper successful!
+
+At Mapper Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 24MB peak: 109MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+# Wed Aug 21 16:31:13 2024
+
+###########################################################]

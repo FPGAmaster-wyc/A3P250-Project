@@ -1,0 +1,332 @@
+KEY LIBERO "11.8"
+KEY CAPTURE "11.8.0.26"
+KEY DEFAULT_IMPORT_LOC "D:\LED(A3P250)"
+KEY DEFAULT_OPEN_LOC ""
+KEY ProjectID "0"
+KEY HDLTechnology "VERILOG"
+KEY VERILOGMODE "VERILOG2001"
+KEY VHDLMODE "VHDL2008"
+KEY UseConstraintFlowTechnology "FALSE"
+KEY VendorTechnology_Family "ProASIC3"
+KEY VendorTechnology_Die "IS4X4M1"
+KEY VendorTechnology_Package "vq100"
+KEY VendorTechnology_Speed "-1"
+KEY VendorTechnology_DieVoltage "1.5"
+KEY VendorTechnology_PART_RANGE "COM"
+KEY VendorTechnology_DSW_VCCA_VOLTAGE_RAMP_RATE ""
+KEY VendorTechnology_IO_DEFT_STD "LVCMOS33"
+KEY VendorTechnology_OPCONR ""
+KEY VendorTechnology_PLL_SUPPLY ""
+KEY VendorTechnology_RAD_EXPOSURE ""
+KEY VendorTechnology_RESERVEMIGRATIONPINS "1"
+KEY VendorTechnology_RESTRICTPROBEPINS "1"
+KEY VendorTechnology_RESTRICTSPIPINS "0"
+KEY VendorTechnology_SYSTEM_CONTROLLER_SUSPEND_MODE ""
+KEY VendorTechnology_TARGETDEVICESFORMIGRATION "IS4X4M1"
+KEY VendorTechnology_TEMPR "COM"
+KEY VendorTechnology_UNUSED_MSS_IO_RESISTOR_PULL "None"
+KEY VendorTechnology_VCCI_1.5_VOLTR "COM"
+KEY VendorTechnology_VCCI_1.8_VOLTR "COM"
+KEY VendorTechnology_VCCI_2.5_VOLTR "COM"
+KEY VendorTechnology_VCCI_3.3_VOLTR "COM"
+KEY VendorTechnology_VOLTR "COM"
+KEY ProjectLocation "E:\my_work\A3P250\project\RD_FLASH1"
+KEY ProjectDescription ""
+KEY Pa4PeripheralNewSeq "GOOD"
+KEY SimulationType "VERILOG"
+KEY Vendor "Actel"
+KEY ActiveRoot "spi_flash_read::work"
+LIST REVISIONS
+VALUE="Impl1",NUM=1
+CURREV=1
+ENDLIST
+LIST FileManager
+VALUE "<project>\designer\impl1\flash_read_ctrl.ide_des,ide_des"
+STATE="utd"
+TIME="1724228863"
+SIZE="202"
+ENDFILE
+VALUE "<project>\designer\impl1\spi_flash_read.adb,adb"
+STATE="ood"
+TIME="1724229091"
+SIZE="28160"
+ENDFILE
+VALUE "<project>\designer\impl1\spi_flash_read.ide_des,ide_des"
+STATE="utd"
+TIME="1724229091"
+SIZE="986"
+ENDFILE
+VALUE "<project>\hdl\flash_read_ctrl.v,hdl"
+STATE="utd"
+TIME="1724230074"
+SIZE="9103"
+ENDFILE
+VALUE "<project>\hdl\key_filter.v,hdl"
+STATE="utd"
+TIME="1724228981"
+SIZE="1739"
+ENDFILE
+VALUE "<project>\hdl\spi_flash_read.v,hdl"
+STATE="utd"
+TIME="1724229916"
+SIZE="3637"
+ENDFILE
+VALUE "<project>\hdl\uart_tx.v,hdl"
+STATE="utd"
+TIME="1724228977"
+SIZE="3368"
+ENDFILE
+VALUE "<project>\smartgen\fifo8b2048\fifo8b2048.cxf,actgen_cxf"
+STATE="utd"
+TIME="1724230062"
+SIZE="2144"
+ENDFILE
+VALUE "<project>\smartgen\fifo8b2048\fifo8b2048.gen,gen"
+STATE="utd"
+TIME="1724230061"
+SIZE="928"
+PARENT="<project>\smartgen\fifo8b2048\fifo8b2048.cxf"
+IS_READONLY="TRUE"
+ENDFILE
+VALUE "<project>\smartgen\fifo8b2048\fifo8b2048.log,log"
+STATE="utd"
+TIME="1724230062"
+SIZE="3551"
+PARENT="<project>\smartgen\fifo8b2048\fifo8b2048.cxf"
+IS_READONLY="TRUE"
+ENDFILE
+VALUE "<project>\smartgen\fifo8b2048\fifo8b2048.v,hdl"
+STATE="utd"
+TIME="1724230062"
+SIZE="45996"
+PARENT="<project>\smartgen\fifo8b2048\fifo8b2048.cxf"
+IS_READONLY="TRUE"
+ENDFILE
+VALUE "<project>\smartgen\get_clk\get_clk.cxf,actgen_cxf"
+STATE="utd"
+TIME="1724229867"
+SIZE="1476"
+ENDFILE
+VALUE "<project>\smartgen\get_clk\get_clk.gen,gen"
+STATE="utd"
+TIME="1724229866"
+SIZE="543"
+PARENT="<project>\smartgen\get_clk\get_clk.cxf"
+IS_READONLY="TRUE"
+ENDFILE
+VALUE "<project>\smartgen\get_clk\get_clk.log,log"
+STATE="utd"
+TIME="1724229867"
+SIZE="2737"
+PARENT="<project>\smartgen\get_clk\get_clk.cxf"
+IS_READONLY="TRUE"
+ENDFILE
+VALUE "<project>\smartgen\get_clk\get_clk.v,hdl"
+STATE="utd"
+TIME="1724229867"
+SIZE="2664"
+PARENT="<project>\smartgen\get_clk\get_clk.cxf"
+IS_READONLY="TRUE"
+ENDFILE
+VALUE "<project>\synthesis\spi_flash_read.edn,syn_edn"
+STATE="utd"
+TIME="1724230108"
+SIZE="346267"
+ENDFILE
+VALUE "<project>\synthesis\spi_flash_read.so,so"
+STATE="utd"
+TIME="1724230108"
+SIZE="233"
+ENDFILE
+VALUE "<project>\synthesis\spi_flash_read_sdc.sdc,syn_sdc"
+STATE="utd"
+TIME="1724230108"
+SIZE="310"
+ENDFILE
+VALUE "<project>\synthesis\spi_flash_read_syn.prj,prj"
+STATE="utd"
+TIME="1724230108"
+SIZE="2122"
+ENDFILE
+ENDLIST
+LIST UsedFile
+ENDLIST
+LIST NewModulesInfo
+LIST "spi_flash_read::work"
+FILE "<project>\hdl\spi_flash_read.v,hdl"
+LIST ProjectState5.1
+LIST Impl1
+LiberoState=Post_Synthesis
+ideSYNTHESIS(<project>\synthesis\spi_flash_read.edn,syn_edn)=StateSuccess
+LIST FlowOptions
+UsePhySynth=FALSE
+UseSynth=TRUE
+UseFhbAutoInst=FALSE
+ENDLIST
+Used_File_List
+ENDUsed_File_List
+ENDLIST
+ENDLIST
+ENDLIST
+ENDLIST
+LIST AssociatedStimulus
+ENDLIST
+LIST Other_Association
+ENDLIST
+LIST SimulationOptions
+UseAutomaticDoFile=true
+IncludeWaveDo=false
+Type=max
+RunTime=1000ns
+Resolution=1ps
+VsimOpt=
+EntityName=testbench
+TopInstanceName=<top>_0
+DoFileName=
+DoFileName2=wave.do
+DoFileParams=
+DisplayDUTWave=false
+LogAllSignals=false
+DisablePulseFiltering=false
+DumpVCD=false
+VCDFileName=power.vcd
+VHDL2008=false
+Verilog2001=false
+SystemVerilog=false
+TimeUnit=1
+TimeUnitBase=ns
+Precision=100
+PrecisionBase=ps
+ENDLIST
+LIST ModelSimLibPath
+UseCustomPath=FALSE
+LibraryPath=
+ENDLIST
+LIST GlobalFlowOptions
+GenerateHDLAfterSynthesis=FALSE
+GenerateHDLAfterPhySynthesis=FALSE
+RunDRCAfterSynthesis=FALSE
+AutoCheckConstraints=TRUE
+UpdateModelSimIni=TRUE
+NoIOMode=FALSE
+PeriInitStandalone=FALSE
+EnableViewDraw=FALSE
+UpdateViewDrawIni=TRUE
+GenerateHDLFromSchematic=TRUE
+VmNetlistFlowOn=FALSE
+EnableDesignSeparationOn=FALSE
+EnableSETMitigationOn=FALSE
+DisplayFanoutLimit=10
+AbortFlowOnPDCErrorsOn=TRUE
+AbortFlowOnSDCErrorsOn=TRUE
+FlashProInputFile=pdb
+SmartGenCompileReport=T
+ENDLIST
+LIST PhySynthesisOptions
+ENDLIST
+LIST Profiles
+NAME="SoftConsole"
+FUNCTION="SoftwareIDE"
+TOOL="SoftConsole"
+LOCATION="eclipse.exe"
+PARAM=""
+BATCH=0
+LICENSE=""
+IS32BIT="1"
+EndProfile
+NAME="Synplify Pro ME"
+FUNCTION="Synthesis"
+TOOL="Synplify Pro ME"
+LOCATION="C:\Microsemi\Libero_SoC_v11.8\SynplifyPro\bin\synplify_pro.exe"
+PARAM=""
+BATCH=0
+LICENSE=""
+IS32BIT="1"
+EndProfile
+NAME="ModelSim ME"
+FUNCTION="Simulation"
+TOOL="ModelSim"
+LOCATION="C:\Microsemi\Libero_SoC_v11.8\Modelsim\win32acoem\modelsim.exe"
+PARAM=""
+BATCH=0
+LICENSE=""
+IS32BIT="1"
+EndProfile
+NAME="FPExpress"
+FUNCTION="Program"
+TOOL="FlashPro"
+LOCATION="C:\Microsemi\Libero_SoC_v11.8\Designer\bin\FPExpress.exe"
+PARAM=""
+BATCH=0
+LICENSE=""
+IS32BIT="1"
+EndProfile
+NAME="Identify Debugger"
+FUNCTION="IdentifyDebugger"
+TOOL="Identify Debugger"
+LOCATION="C:\Microsemi\Libero_SoC_v11.8\Identify\bin\identify_debugger.exe"
+PARAM=""
+BATCH=0
+LICENSE=""
+IS32BIT="1"
+EndProfile
+ENDLIST
+LIST ProjectState5.1
+LIST "spi_flash_read::work"
+LIST Impl1
+LiberoState=Post_Synthesis
+ideSYNTHESIS(<project>\synthesis\spi_flash_read.edn,syn_edn)=StateSuccess
+LIST FlowOptions
+UsePhySynth=FALSE
+UseSynth=TRUE
+UseFhbAutoInst=FALSE
+ENDLIST
+Used_File_List
+ENDUsed_File_List
+ENDLIST
+ENDLIST
+ENDLIST
+LIST ExcludePackageForSimulation
+ENDLIST
+LIST ExcludePackageForSynthesis
+ENDLIST
+LIST IncludeModuleForSimulation
+ENDLIST
+LIST CDBOrder
+ENDLIST
+LIST UserCustomizedFileList
+ENDLIST
+LIST OpenedFileList
+ORIENTATION;HORIZONTAL
+StartPage;StartPage;0
+ACTIVEVIEW;StartPage
+ENDLIST
+LIST ModuleSubBlockList
+LIST "fifo8b2048::work","smartgen\fifo8b2048\fifo8b2048.v","TRUE","FALSE"
+ENDLIST
+LIST "flash_read_ctrl::work","hdl\flash_read_ctrl.v","FALSE","FALSE"
+SUBBLOCK "fifo8b2048::work","smartgen\fifo8b2048\fifo8b2048.v","TRUE","FALSE"
+ENDLIST
+LIST "get_clk::work","smartgen\get_clk\get_clk.v","TRUE","FALSE"
+ENDLIST
+LIST "key_filter::work","hdl\key_filter.v","FALSE","FALSE"
+ENDLIST
+LIST "spi_flash_read::work","hdl\spi_flash_read.v","FALSE","FALSE"
+SUBBLOCK "flash_read_ctrl::work","hdl\flash_read_ctrl.v","FALSE","FALSE"
+SUBBLOCK "get_clk::work","smartgen\get_clk\get_clk.v","TRUE","FALSE"
+SUBBLOCK "key_filter::work","hdl\key_filter.v","FALSE","FALSE"
+SUBBLOCK "uart_tx::work","hdl\uart_tx.v","FALSE","FALSE"
+ENDLIST
+LIST "uart_tx::work","hdl\uart_tx.v","FALSE","FALSE"
+ENDLIST
+ENDLIST
+LIST ActiveTestBenchList
+ENDLIST
+LIST IOTabList
+ENDLIST
+LIST FPTabList
+ENDLIST
+LIST TimingTabList
+ENDLIST
+LIST FDCTabList
+ENDLIST

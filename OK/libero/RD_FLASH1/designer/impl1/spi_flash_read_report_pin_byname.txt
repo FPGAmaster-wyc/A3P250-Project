@@ -1,0 +1,25 @@
+*****************************************************************
+Pin Report - Date: Wed Aug 21 17:00:08 2024 Pinchecksum: NOT-AVAILABLE
+Product: Designer
+Release: v11.8
+Version: 11.8.0.26
+Design Name: spi_flash_read
+Family: ProASIC3
+Die: A3P250
+Package: 100 VQFP
+*****************************************************************
+Port      |Pin |Fixed |Function       |I/O Std  |Output Drive (mA) |Slew |Resistor Pull |Skew |Output Load (pF) |Use I/O Reg |Hot Swappable |
+----------|----|------|---------------|---------|------------------|-----|--------------|-----|-----------------|------------|--------------|
+cs_n       2    Yes    GAA2/IO118UDB3  LVCMOS33  12                 High  None           No    35                No           No
+cs_n_d     97   Yes    GAA1/IO01RSB0   LVCMOS33  12                 High  None           No    35                No           No
+key        10   Yes    GFB1/IO109PDB3  LVCMOS33  ---                ---   None           ---   ---               No           No
+miso       4    Yes    GAB2/IO117UDB3  LVCMOS33  ---                ---   None           ---   ---               No           No
+miso_d     95   Yes    GAB1/IO03RSB0   LVCMOS33  12                 High  None           No    35                No           No
+mosi       8    Yes    IO112PSB3       LVCMOS33  12                 High  None           No    35                No           No
+mosi_d     91   Yes    IO13RSB0        LVCMOS33  12                 High  None           No    35                No           No
+sck        6    Yes    GAC2/IO116UDB3  LVCMOS33  12                 High  None           No    35                No           No
+sck_d      93   Yes    GAC1/IO05RSB0   LVCMOS33  12                 High  None           No    35                No           No
+sys_clk    13   Yes    GFA0/IO108NPB3  LVCMOS33  ---                ---   None           ---   ---               No           No
+sys_rst_n  63   Yes    GCA0/IO50NDB1   LVCMOS33  ---                ---   None           ---   ---               No           No
+tx         44   Yes    GDB2/IO62RSB2   LVCMOS33  12                 High  None           No    35                No           No
+tx_d       59   Yes    GDC1/IO58UDB1   LVCMOS33  12                 High  None           No    35                No           No

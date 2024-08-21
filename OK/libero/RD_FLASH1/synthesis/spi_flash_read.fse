@@ -1,0 +1,10 @@
+
+fsm_encoding {910701071} sequential
+
+fsm_state_encoding {910701071} IDLE {00}
+
+fsm_state_encoding {910701071} READ {01}
+
+fsm_state_encoding {910701071} SEND {10}
+
+fsm_registers {910701071} {state[1]}  {state[0]} 

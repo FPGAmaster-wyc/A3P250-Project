@@ -1,0 +1,5 @@
+@N: MF248 |Running in 64-bit mode.
+@N: MF667 |Clock conversion disabled. (Command "set_option -fix_gated_and_generated_clocks 0" in the project file.)
+@N: MO111 :"e:\my_work\a3p250\project\rd_flash1\hdl\spi_flash_read.v":21:20:21:23|Tristate driver tx_d (in view: work.spi_flash_read(verilog)) on net tx_d (in view: work.spi_flash_read(verilog)) has its enable tied to GND.
+@N: MO111 :"e:\my_work\a3p250\project\rd_flash1\hdl\spi_flash_read.v":21:20:21:23|Tristate driver tx_d (in view: work.spi_flash_read(verilog)) on net tx_d (in view: work.spi_flash_read(verilog)) has its enable tied to GND.
+@N: BN225 |Writing default property annotation file E:\my_work\A3P250\project\RD_FLASH1\synthesis\spi_flash_read.sap.

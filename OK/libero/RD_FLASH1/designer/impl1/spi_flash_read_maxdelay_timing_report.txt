@@ -1,0 +1,606 @@
+Timing Report Max Delay Analysis
+
+SmartTime Version v11.8
+Microsemi Corporation - Microsemi Libero Software Release v11.8 (Version 11.8.0.26)
+Date: Wed Aug 21 17:00:17 2024
+
+
+Design: spi_flash_read
+Family: ProASIC3
+Die: A3P250
+Package: 100 VQFP
+Temperature Range: 0 - 70 C
+Voltage Range: 1.425 - 1.575 V
+Speed Grade: -1
+Design State: Post-Layout
+Data source: Silicon verified
+Min Operating Conditions: BEST - 1.575 V - 0 C
+Max Operating Conditions: WORST - 1.425 V - 70 C
+Using Enhanced Min Delay Analysis
+Scenario for Timing Analysis: Primary
+
+
+-----------------------------------------------------
+SUMMARY
+
+Clock Domain:               PLL/Core:GLA
+Period (ns):                12.875
+Frequency (MHz):            77.670
+Required Period (ns):       100.000
+Required Frequency (MHz):   10.000
+External Setup (ns):        6.806
+External Hold (ns):         1.184
+Min Clock-To-Out (ns):      3.589
+Max Clock-To-Out (ns):      10.094
+
+Clock Domain:               sys_clk
+Period (ns):                4.000
+Frequency (MHz):            250.000
+Required Period (ns):       20.000
+Required Frequency (MHz):   50.000
+External Setup (ns):        N/A
+External Hold (ns):         N/A
+Min Clock-To-Out (ns):      N/A
+Max Clock-To-Out (ns):      N/A
+
+                            Input to Output
+Min Delay (ns):             1.836
+Max Delay (ns):             5.009
+
+END SUMMARY
+-----------------------------------------------------
+
+Clock Domain PLL/Core:GLA
+
+SET Register to Register
+
+Path 1
+  From:                        flash_read_ctrl_inst/po_flag:CLK
+  To:                          flash_read_ctrl_inst/FIFO/DFN1C0_FULL:D
+  Delay (ns):                  12.396
+  Slack (ns):                  87.125
+  Arrival (ns):                15.854
+  Required (ns):               102.979
+  Setup (ns):                  0.488
+  Minimum Period (ns):         12.875
+
+Path 2
+  From:                        flash_read_ctrl_inst/FIFO/DFN1C0_FULL:CLK
+  To:                          flash_read_ctrl_inst/FIFO/DFN1C0_FULL:D
+  Delay (ns):                  12.057
+  Slack (ns):                  87.455
+  Arrival (ns):                15.524
+  Required (ns):               102.979
+  Setup (ns):                  0.488
+  Minimum Period (ns):         12.545
+
+Path 3
+  From:                        flash_read_ctrl_inst/cnt_byte[14]:CLK
+  To:                          flash_read_ctrl_inst/cnt_byte[14]:D
+  Delay (ns):                  11.543
+  Slack (ns):                  87.999
+  Arrival (ns):                14.982
+  Required (ns):               102.981
+  Setup (ns):                  0.458
+  Minimum Period (ns):         12.001
+
+Path 4
+  From:                        key_filter_inst/cnt_20ms[0]:CLK
+  To:                          key_filter_inst/cnt_20ms[18]:D
+  Delay (ns):                  11.484
+  Slack (ns):                  88.042
+  Arrival (ns):                14.930
+  Required (ns):               102.972
+  Setup (ns):                  0.488
+  Minimum Period (ns):         11.958
+
+Path 5
+  From:                        key_filter_inst/cnt_20ms[0]:CLK
+  To:                          key_filter_inst/cnt_20ms[19]:D
+  Delay (ns):                  11.438
+  Slack (ns):                  88.088
+  Arrival (ns):                14.884
+  Required (ns):               102.972
+  Setup (ns):                  0.488
+  Minimum Period (ns):         11.912
+
+
+Expanded Path 1
+  From: flash_read_ctrl_inst/po_flag:CLK
+  To: flash_read_ctrl_inst/FIFO/DFN1C0_FULL:D
+  data required time                             102.979
+  data arrival time                          -   15.854
+  slack                                          87.125
+  ________________________________________________________
+  Data arrival time calculation
+  0.000                        PLL/Core:GLA
+               +     0.000          Clock source
+  0.000                        PLL/Core:GLA (r)
+               +     2.864          Clock generation
+  2.864
+               +     0.594          net: GLA
+  3.458                        flash_read_ctrl_inst/po_flag:CLK (r)
+               +     0.627          cell: ADLIB:DFN1C0
+  4.085                        flash_read_ctrl_inst/po_flag:Q (f)
+               +     0.294          net: flash_read_ctrl_inst/po_flag
+  4.379                        flash_read_ctrl_inst/FIFO/NAND2_1_RNITELM:B (f)
+               +     0.534          cell: ADLIB:AND2A
+  4.913                        flash_read_ctrl_inst/FIFO/NAND2_1_RNITELM:Y (f)
+               +     0.920          net: flash_read_ctrl_inst/FIFO/MEMORYWE
+  5.833                        flash_read_ctrl_inst/FIFO/DFN1C0_MEM_WADDR[0]_RNIA5LU:B (f)
+               +     0.537          cell: ADLIB:AND2
+  6.370                        flash_read_ctrl_inst/FIFO/DFN1C0_MEM_WADDR[0]_RNIA5LU:Y (f)
+               +     0.359          net: flash_read_ctrl_inst/FIFO/AND2_26_Y
+  6.729                        flash_read_ctrl_inst/FIFO/XOR2_27_RNIS50A1:B (f)
+               +     0.537          cell: ADLIB:NOR2B
+  7.266                        flash_read_ctrl_inst/FIFO/XOR2_27_RNIS50A1:Y (f)
+               +     0.672          net: flash_read_ctrl_inst/FIFO/AO1_1_Y
+  7.938                        flash_read_ctrl_inst/FIFO/XOR2_15_RNI9AN92:C (f)
+               +     0.580          cell: ADLIB:NOR3C
+  8.518                        flash_read_ctrl_inst/FIFO/XOR2_15_RNI9AN92:Y (f)
+               +     0.941          net: flash_read_ctrl_inst/FIFO/AO1_24_Y
+  9.459                        flash_read_ctrl_inst/FIFO/XOR2_46_RNIUJSK4:B (f)
+               +     0.534          cell: ADLIB:NOR2B
+  9.993                        flash_read_ctrl_inst/FIFO/XOR2_46_RNIUJSK4:Y (f)
+               +     0.424          net: flash_read_ctrl_inst/FIFO/AO1_5_Y
+  10.417                       flash_read_ctrl_inst/FIFO/XOR2_69_RNIHRGO4:B (f)
+               +     0.840          cell: ADLIB:XOR2
+  11.257                       flash_read_ctrl_inst/FIFO/XOR2_69_RNIHRGO4:Y (f)
+               +     0.326          net: flash_read_ctrl_inst/FIFO/WBINNXTSHIFT[8]
+  11.583                       flash_read_ctrl_inst/FIFO/DFN1C0_FULL_RNO_9:B (f)
+               +     0.797          cell: ADLIB:XNOR2
+  12.380                       flash_read_ctrl_inst/FIFO/DFN1C0_FULL_RNO_9:Y (r)
+               +     0.275          net: flash_read_ctrl_inst/FIFO/XNOR2_2_Y
+  12.655                       flash_read_ctrl_inst/FIFO/DFN1C0_FULL_RNO_5:C (r)
+               +     0.639          cell: ADLIB:AND3
+  13.294                       flash_read_ctrl_inst/FIFO/DFN1C0_FULL_RNO_5:Y (r)
+               +     0.271          net: flash_read_ctrl_inst/FIFO/AND3_4_Y
+  13.565                       flash_read_ctrl_inst/FIFO/DFN1C0_FULL_RNO_2:A (r)
+               +     0.447          cell: ADLIB:AND3
+  14.012                       flash_read_ctrl_inst/FIFO/DFN1C0_FULL_RNO_2:Y (r)
+               +     0.271          net: flash_read_ctrl_inst/FIFO/AND3_2_Y
+  14.283                       flash_read_ctrl_inst/FIFO/DFN1C0_FULL_RNO_0:A (r)
+               +     0.447          cell: ADLIB:AND3
+  14.730                       flash_read_ctrl_inst/FIFO/DFN1C0_FULL_RNO_0:Y (r)
+               +     0.292          net: flash_read_ctrl_inst/FIFO/AND3_1_Y
+  15.022                       flash_read_ctrl_inst/FIFO/DFN1C0_FULL_RNO:C (r)
+               +     0.549          cell: ADLIB:XA1
+  15.571                       flash_read_ctrl_inst/FIFO/DFN1C0_FULL_RNO:Y (r)
+               +     0.283          net: flash_read_ctrl_inst/FIFO/FULLINT
+  15.854                       flash_read_ctrl_inst/FIFO/DFN1C0_FULL:D (r)
+                                    
+  15.854                       data arrival time
+  ________________________________________________________
+  Data required time calculation
+  100.000                      PLL/Core:GLA
+               +     0.000          Clock source
+  100.000                      PLL/Core:GLA (r)
+               +     2.864          Clock generation
+  102.864
+               +     0.603          net: GLA
+  103.467                      flash_read_ctrl_inst/FIFO/DFN1C0_FULL:CLK (r)
+               -     0.488          Library setup time: ADLIB:DFN1C0
+  102.979                      flash_read_ctrl_inst/FIFO/DFN1C0_FULL:D
+                                    
+  102.979                      data required time
+
+
+END SET Register to Register
+
+----------------------------------------------------
+
+SET External Setup
+
+Path 1
+  From:                        key
+  To:                          key_filter_inst/cnt_20ms[2]:D
+  Delay (ns):                  9.794
+  Slack (ns):
+  Arrival (ns):                9.794
+  Required (ns):
+  Setup (ns):                  0.458
+  External Setup (ns):         6.806
+
+Path 2
+  From:                        key
+  To:                          key_filter_inst/cnt_20ms[0]:D
+  Delay (ns):                  9.758
+  Slack (ns):
+  Arrival (ns):                9.758
+  Required (ns):
+  Setup (ns):                  0.458
+  External Setup (ns):         6.770
+
+Path 3
+  From:                        key
+  To:                          key_filter_inst/cnt_20ms[3]:D
+  Delay (ns):                  9.679
+  Slack (ns):
+  Arrival (ns):                9.679
+  Required (ns):
+  Setup (ns):                  0.458
+  External Setup (ns):         6.688
+
+Path 4
+  From:                        key
+  To:                          key_filter_inst/cnt_20ms[5]:D
+  Delay (ns):                  9.620
+  Slack (ns):
+  Arrival (ns):                9.620
+  Required (ns):
+  Setup (ns):                  0.458
+  External Setup (ns):         6.632
+
+Path 5
+  From:                        key
+  To:                          key_filter_inst/cnt_20ms[6]:D
+  Delay (ns):                  9.110
+  Slack (ns):
+  Arrival (ns):                9.110
+  Required (ns):
+  Setup (ns):                  0.488
+  External Setup (ns):         6.152
+
+
+Expanded Path 1
+  From: key
+  To: key_filter_inst/cnt_20ms[2]:D
+  data required time                             N/C
+  data arrival time                          -   9.794
+  slack                                          N/C
+  ________________________________________________________
+  Data arrival time calculation
+  0.000                        key (f)
+               +     0.000          net: key
+  0.000                        key_pad/U0/U0:PAD (f)
+               +     0.586          cell: ADLIB:IOPAD_IN
+  0.586                        key_pad/U0/U0:Y (f)
+               +     0.000          net: key_pad/U0/NET1
+  0.586                        key_pad/U0/U1:YIN (f)
+               +     0.034          cell: ADLIB:IOIN_IB
+  0.620                        key_pad/U0/U1:Y (f)
+               +     4.002          net: key_c
+  4.622                        key_filter_inst/cnt_20ms_RNITDLC[19]:C (f)
+               +     0.566          cell: ADLIB:OR3B
+  5.188                        key_filter_inst/cnt_20ms_RNITDLC[19]:Y (f)
+               +     0.284          net: key_filter_inst/cnt_20mslde_4
+  5.472                        key_filter_inst/cnt_20ms_RNI64JQ[16]:B (f)
+               +     0.531          cell: ADLIB:OR3A
+  6.003                        key_filter_inst/cnt_20ms_RNI64JQ[16]:Y (f)
+               +     1.472          net: key_filter_inst/cnt_20mslde_8
+  7.475                        key_filter_inst/cnt_20ms_RNID89M5[3]:B (f)
+               +     0.531          cell: ADLIB:OR3A
+  8.006                        key_filter_inst/cnt_20ms_RNID89M5[3]:Y (f)
+               +     1.062          net: key_filter_inst/cnt_20mse
+  9.068                        key_filter_inst/cnt_20ms_RNO[2]:S (f)
+               +     0.442          cell: ADLIB:MX2A
+  9.510                        key_filter_inst/cnt_20ms_RNO[2]:Y (f)
+               +     0.284          net: key_filter_inst/cnt_20ms_RNO[2]
+  9.794                        key_filter_inst/cnt_20ms[2]:D (f)
+                                    
+  9.794                        data arrival time
+  ________________________________________________________
+  Data required time calculation
+  N/C                          PLL/Core:GLA
+               +     0.000          Clock source
+  N/C                          PLL/Core:GLA (r)
+               +     2.864          Clock generation
+  N/C
+               +     0.582          net: GLA
+  N/C                          key_filter_inst/cnt_20ms[2]:CLK (r)
+               -     0.458          Library setup time: ADLIB:DFN1C0
+  N/C                          key_filter_inst/cnt_20ms[2]:D
+
+
+END SET External Setup
+
+----------------------------------------------------
+
+SET Clock to Output
+
+Path 1
+  From:                        uart_tx_inst/tx:CLK
+  To:                          tx
+  Delay (ns):                  6.642
+  Slack (ns):
+  Arrival (ns):                10.094
+  Required (ns):
+  Clock to Out (ns):           10.094
+
+Path 2
+  From:                        flash_read_ctrl_inst/cs_n:CLK
+  To:                          cs_n
+  Delay (ns):                  6.540
+  Slack (ns):
+  Arrival (ns):                9.981
+  Required (ns):
+  Clock to Out (ns):           9.981
+
+Path 3
+  From:                        flash_read_ctrl_inst/sck:CLK
+  To:                          sck
+  Delay (ns):                  5.948
+  Slack (ns):
+  Arrival (ns):                9.441
+  Required (ns):
+  Clock to Out (ns):           9.441
+
+Path 4
+  From:                        flash_read_ctrl_inst/cs_n:CLK
+  To:                          cs_n_d
+  Delay (ns):                  5.925
+  Slack (ns):
+  Arrival (ns):                9.366
+  Required (ns):
+  Clock to Out (ns):           9.366
+
+Path 5
+  From:                        flash_read_ctrl_inst/mosi:CLK
+  To:                          mosi_d
+  Delay (ns):                  5.851
+  Slack (ns):
+  Arrival (ns):                9.344
+  Required (ns):
+  Clock to Out (ns):           9.344
+
+
+Expanded Path 1
+  From: uart_tx_inst/tx:CLK
+  To: tx
+  data required time                             N/C
+  data arrival time                          -   10.094
+  slack                                          N/C
+  ________________________________________________________
+  Data arrival time calculation
+  0.000                        PLL/Core:GLA
+               +     0.000          Clock source
+  0.000                        PLL/Core:GLA (r)
+               +     2.864          Clock generation
+  2.864
+               +     0.588          net: GLA
+  3.452                        uart_tx_inst/tx:CLK (r)
+               +     0.627          cell: ADLIB:DFN1E1P0
+  4.079                        uart_tx_inst/tx:Q (f)
+               +     2.833          net: tx_c
+  6.912                        tx_pad/U0/U1:D (f)
+               +     0.495          cell: ADLIB:IOTRI_OB_EB
+  7.407                        tx_pad/U0/U1:DOUT (f)
+               +     0.000          net: tx_pad/U0/NET1
+  7.407                        tx_pad/U0/U0:D (f)
+               +     2.687          cell: ADLIB:IOPAD_TRI
+  10.094                       tx_pad/U0/U0:PAD (f)
+               +     0.000          net: tx
+  10.094                       tx (f)
+                                    
+  10.094                       data arrival time
+  ________________________________________________________
+  Data required time calculation
+  N/C                          PLL/Core:GLA
+               +     0.000          Clock source
+  N/C                          PLL/Core:GLA (r)
+               +     2.864          Clock generation
+  N/C
+                                    
+  N/C                          tx (f)
+
+
+END SET Clock to Output
+
+----------------------------------------------------
+
+SET Register to Asynchronous
+
+No Path
+
+END SET Register to Asynchronous
+
+----------------------------------------------------
+
+SET External Recovery
+
+Path 1
+  From:                        sys_rst_n
+  To:                          flash_read_ctrl_inst/FIFO/RAM4K9_0:RESET
+  Delay (ns):                  1.964
+  Slack (ns):
+  Arrival (ns):                1.964
+  Required (ns):
+  Recovery (ns):               1.663
+  External Recovery (ns):      -0.026
+
+Path 2
+  From:                        sys_rst_n
+  To:                          flash_read_ctrl_inst/FIFO/RAM4K9_2:RESET
+  Delay (ns):                  1.964
+  Slack (ns):
+  Arrival (ns):                1.964
+  Required (ns):
+  Recovery (ns):               1.663
+  External Recovery (ns):      -0.026
+
+Path 3
+  From:                        sys_rst_n
+  To:                          flash_read_ctrl_inst/FIFO/RAM4K9_3:RESET
+  Delay (ns):                  1.964
+  Slack (ns):
+  Arrival (ns):                1.964
+  Required (ns):
+  Recovery (ns):               1.663
+  External Recovery (ns):      -0.026
+
+Path 4
+  From:                        sys_rst_n
+  To:                          flash_read_ctrl_inst/FIFO/RAM4K9_1:RESET
+  Delay (ns):                  2.011
+  Slack (ns):
+  Arrival (ns):                2.011
+  Required (ns):
+  Recovery (ns):               1.663
+  External Recovery (ns):      -0.045
+
+Path 5
+  From:                        sys_rst_n
+  To:                          flash_read_ctrl_inst/cnt_wait[1]:CLR
+  Delay (ns):                  1.740
+  Slack (ns):
+  Arrival (ns):                1.740
+  Required (ns):
+  Recovery (ns):               0.253
+  External Recovery (ns):      -1.453
+
+
+Expanded Path 1
+  From: sys_rst_n
+  To: flash_read_ctrl_inst/FIFO/RAM4K9_0:RESET
+  data required time                             N/C
+  data arrival time                          -   1.964
+  slack                                          N/C
+  ________________________________________________________
+  Data arrival time calculation
+  0.000                        sys_rst_n (r)
+               +     0.000          net: sys_rst_n
+  0.000                        sys_rst_n_pad/U0/U0:PAD (r)
+               +     0.864          cell: ADLIB:IOPAD_IN
+  0.864                        sys_rst_n_pad/U0/U0:Y (r)
+               +     0.000          net: sys_rst_n_pad/U0/NET1
+  0.864                        sys_rst_n_pad/U0/U1:A (r)
+               +     0.296          cell: ADLIB:CLKIO
+  1.160                        sys_rst_n_pad/U0/U1:Y (r)
+               +     0.804          net: sys_rst_n_c
+  1.964                        flash_read_ctrl_inst/FIFO/RAM4K9_0:RESET (r)
+                                    
+  1.964                        data arrival time
+  ________________________________________________________
+  Data required time calculation
+  N/C                          PLL/Core:GLA
+               +     0.000          Clock source
+  N/C                          PLL/Core:GLA (r)
+               +     2.864          Clock generation
+  N/C
+               +     0.789          net: GLA
+  N/C                          flash_read_ctrl_inst/FIFO/RAM4K9_0:CLKA (r)
+               -     1.663          Library recovery time: ADLIB:RAM4K9
+  N/C                          flash_read_ctrl_inst/FIFO/RAM4K9_0:RESET
+
+
+END SET External Recovery
+
+----------------------------------------------------
+
+SET Asynchronous to Register
+
+No Path
+
+END SET Asynchronous to Register
+
+----------------------------------------------------
+
+Clock Domain sys_clk
+
+Info: The maximum frequency of this clock domain is limited by the minimum pulse widths of pin sys_clk_pad/U0/U0:PAD
+
+SET Register to Register
+
+No Path
+
+END SET Register to Register
+
+----------------------------------------------------
+
+SET External Setup
+
+No Path
+
+END SET External Setup
+
+----------------------------------------------------
+
+SET Clock to Output
+
+No Path
+
+END SET Clock to Output
+
+----------------------------------------------------
+
+SET Register to Asynchronous
+
+No Path
+
+END SET Register to Asynchronous
+
+----------------------------------------------------
+
+SET External Recovery
+
+No Path
+
+END SET External Recovery
+
+----------------------------------------------------
+
+SET Asynchronous to Register
+
+No Path
+
+END SET Asynchronous to Register
+
+----------------------------------------------------
+
+Path set Pin to Pin
+
+SET Input to Output
+
+Path 1
+  From:                        miso
+  To:                          miso_d
+  Delay (ns):                  5.009
+  Slack (ns):
+  Arrival (ns):                5.009
+  Required (ns):
+
+
+Expanded Path 1
+  From: miso
+  To: miso_d
+  data required time                             N/C
+  data arrival time                          -   5.009
+  slack                                          N/C
+  ________________________________________________________
+  Data arrival time calculation
+  0.000                        miso (f)
+               +     0.000          net: miso
+  0.000                        miso_pad/U0/U0:PAD (f)
+               +     0.586          cell: ADLIB:IOPAD_IN
+  0.586                        miso_pad/U0/U0:Y (f)
+               +     0.000          net: miso_pad/U0/NET1
+  0.586                        miso_pad/U0/U1:YIN (f)
+               +     0.034          cell: ADLIB:IOIN_IB
+  0.620                        miso_pad/U0/U1:Y (f)
+               +     1.207          net: miso_c_c
+  1.827                        miso_d_pad/U0/U1:D (f)
+               +     0.495          cell: ADLIB:IOTRI_OB_EB
+  2.322                        miso_d_pad/U0/U1:DOUT (f)
+               +     0.000          net: miso_d_pad/U0/NET1
+  2.322                        miso_d_pad/U0/U0:D (f)
+               +     2.687          cell: ADLIB:IOPAD_TRI
+  5.009                        miso_d_pad/U0/U0:PAD (f)
+               +     0.000          net: miso_d
+  5.009                        miso_d (f)
+                                    
+  5.009                        data arrival time
+  ________________________________________________________
+  Data required time calculation
+  N/C                          miso (f)
+                                    
+  N/C                          miso_d (f)
+                                    
+  N/C                          data required time
+
+
+END SET Input to Output
+
+----------------------------------------------------
+
+Path set User Sets
+

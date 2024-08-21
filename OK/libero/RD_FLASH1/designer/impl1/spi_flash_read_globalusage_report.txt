@@ -1,0 +1,23 @@
+********************************************************************
+                            Global Usage Report
+********************************************************************
+  
+Product: Designer
+Release: v11.8
+Version: 11.8.0.26
+Date: Wed Aug 21 17:00:07 2024
+Design Name: spi_flash_read  Family: ProASIC3  Die: A3P250  Package: 100 VQFP
+Design State: Post-Layout
+
+The following nets have been routed to a chip global resource:
+
+    Fanout            Name
+    ----------------------
+    170               Net   : GLA
+                      Driver: PLL/Core/U_PLL
+    166               Net   : sys_rst_n_c
+                      Driver: sys_rst_n_pad/U0/U1/U_GL
+
+
+
+

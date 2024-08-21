@@ -1,0 +1,19 @@
+Microsemi Libero Software
+Version: 11.8.0.26
+Release: v11.8
+
+Info: The design E:/my_work/A3P250/project/RD_FLASH1/designer/impl1/spi_flash_read.adb was last
+      modified by software version 11.8.0.26.
+Opened an existing Libero design
+E:/my_work/A3P250/project/RD_FLASH1/designer/impl1/spi_flash_read.adb.
+
+The Export-map command succeeded ( 00:00:06 )
+Wrote to the file: E:\my_work\A3P250\project\RD_FLASH1\designer\impl1\spi_flash_read.pdb
+CHECKSUM: EAD5
+
+The Generate programming file command succeeded ( 00:00:06 )
+Design saved to file E:/my_work/A3P250/project/RD_FLASH1/designer/impl1/spi_flash_read.adb.
+
+The Execute Script command succeeded ( 00:00:08 )
+Design closed.
+
